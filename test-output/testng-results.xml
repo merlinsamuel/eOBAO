@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="HeaderSuite" duration-ms="18409" started-at="2017-02-08T02:20:13Z" finished-at="2017-02-08T02:20:31Z">
+    <groups>
+    </groups>
+    <test name="HeaderTest" duration-ms="18409" started-at="2017-02-08T02:20:13Z" finished-at="2017-02-08T02:20:31Z">
+      <class name="testscripts.TC_Header">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:testscripts.TC_Header@5e3a8624]" name="Setup" is-config="true" duration-ms="14102" started-at="2017-02-07T18:20:13Z" finished-at="2017-02-07T18:20:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="ApplicationHeader()[pri:0, instance:testscripts.TC_Header@5e3a8624]" name="ApplicationHeader" duration-ms="1114" started-at="2017-02-07T18:20:27Z" finished-at="2017-02-07T18:20:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApplicationHeader -->
+        <test-method status="PASS" signature="FailedScreenshot(org.testng.ITestResult)[pri:0, instance:testscripts.TC_Header@5e3a8624]" name="FailedScreenshot" is-config="true" duration-ms="5" started-at="2017-02-07T18:20:28Z" finished-at="2017-02-07T18:20:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ApplicationHeader status=SUCCESS method=TC_Header.ApplicationHeader()[pri:0, instance:testscripts.TC_Header@5e3a8624] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FailedScreenshot -->
+        <test-method status="PASS" signature="Teardown()[pri:0, instance:testscripts.TC_Header@5e3a8624]" name="Teardown" is-config="true" duration-ms="3151" started-at="2017-02-07T18:20:28Z" finished-at="2017-02-07T18:20:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+      </class> <!-- testscripts.TC_Header -->
+    </test> <!-- HeaderTest -->
+  </suite> <!-- HeaderSuite -->
+</testng-results>

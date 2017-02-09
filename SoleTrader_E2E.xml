@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ST">
+  <test name="E2E">
+    <classes>
+      <class name="testscripts.TC_SoleTrader"/>
+      <class name="testscripts.TC_BusinessDetails"/>
+      </classes>
+  </test> <!-- E2E -->
+</suite> <!-- ST -->
