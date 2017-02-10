@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite name="Failed suite [ST]">
+  <parameter name="browser" value="Chrome"/>
+  <test name="E2E(failed)">
+    <parameter name="browser" value="Chrome"/>
     <classes>
       <class name="testscripts.TC_SoleTrader">
         <methods>
           <include name="IntroPg"/>
-          <include name="FailedScreenshot"/>
-          <include name="BD"/>
+          <include name="Setup"/>
+          <include name="Teardown"/>
         </methods>
       </class> <!-- testscripts.TC_SoleTrader -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- E2E(failed) -->
+</suite> <!-- Failed suite [ST] -->

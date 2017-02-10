@@ -2,6 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="HeaderSuite">
   <test name="HeaderTest">
+   <parameter name="browser" value="Chrome"></parameter>
     <classes>
       <class name="testscripts.TC_Header"/>
     </classes>

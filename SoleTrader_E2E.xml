@@ -2,6 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="ST">
   <test name="E2E">
+  <parameter name="browser" value="Chrome"></parameter>
     <classes>
       <class name="testscripts.TC_SoleTrader"/>
       <class name="testscripts.TC_BusinessDetails"/>

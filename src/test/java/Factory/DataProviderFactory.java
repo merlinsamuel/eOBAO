@@ -31,5 +31,4 @@ public class DataProviderFactory
 		Screenshot screenshot = new Screenshot();
 		return screenshot;
 	}
-
 }

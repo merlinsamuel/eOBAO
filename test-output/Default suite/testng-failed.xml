@@ -6,8 +6,6 @@
       <class name="testscripts.TC_SoleTrader">
         <methods>
           <include name="IntroPg"/>
-          <include name="FailedScreenshot"/>
-          <include name="BD"/>
         </methods>
       </class> <!-- testscripts.TC_SoleTrader -->
     </classes>
