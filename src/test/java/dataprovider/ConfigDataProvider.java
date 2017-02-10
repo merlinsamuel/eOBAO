@@ -54,5 +54,4 @@ public class ConfigDataProvider
 	{
 		return prop.getProperty("ReportPath");
 	}
-
 }

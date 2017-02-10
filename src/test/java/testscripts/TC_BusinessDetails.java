@@ -14,7 +14,7 @@ import utility.TestBase;
 public class TC_BusinessDetails extends TestBase
 {
 	@Test(dataProviderClass = ApplicationData.class, dataProvider = "BusinessDetailsPg")
-	public void BD(String Txt_BusiName, String Txt_BusiTelephoneNumber, String Txt_BusiEmail, String Txt_MobileNumber, String Txt_BuildingNumber, String Txt_Street, String Txt_County, String Txt_Town, String Txt_PostCode, String Txt_TradingName, String Radio_TradingName, String Dropdown_stat_cor_add)
+	public void BD(String Txt_BusiName, String Txt_BusiTelephoneNumber, String Txt_BusiEmail, String Txt_MobileNumber, String Txt_BuildingNumber, String Txt_Street, String Txt_County, String Txt_Town, String Txt_PostCode, String Txt_TradingName, String Dropdown_stat_cor_add)
 	{
 		BusinessDetailsPg bd = PageFactory.initElements(BrowserFactory.driver, BusinessDetailsPg.class);
 		

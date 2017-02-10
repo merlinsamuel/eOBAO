@@ -7,11 +7,16 @@
     <classes>
       <class name="testscripts.TC_SoleTrader">
         <methods>
-          <include name="IntroPg"/>
           <include name="Setup"/>
+          <include name="FailedScreenshot"/>
           <include name="Teardown"/>
         </methods>
       </class> <!-- testscripts.TC_SoleTrader -->
+      <class name="testscripts.TC_BusinessDetails">
+        <methods>
+          <include name="BD"/>
+        </methods>
+      </class> <!-- testscripts.TC_BusinessDetails -->
     </classes>
   </test> <!-- E2E(failed) -->
 </suite> <!-- Failed suite [ST] -->

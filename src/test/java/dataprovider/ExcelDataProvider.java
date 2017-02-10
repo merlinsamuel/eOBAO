@@ -14,7 +14,7 @@ public class ExcelDataProvider
 	
 	public ExcelDataProvider()
 	{
-		File src = new File("C:\\Merlin_Neon\\com.eobao\\ExcelData\\ST_datasheet.xlsx");
+		File src = new File(DataProviderFactory.getconfig().getTestDataPath());
 		
 		try 
 		{
@@ -39,12 +39,6 @@ public class ExcelDataProvider
 		return col;
 	}
 	
-	public String getExcelCelData(int sheetnum, int row, int col)
-	{
-		String data = wb.getSheetAt(sheetnum).getRow(row).getCell(col).getStringCellValue();
-		return data;
-	}
-	
 	public String getExcelCelData(String sheetname, int row, int col)
 	{
 		String data = wb.getSheet(sheetname).getRow(row).getCell(col).getStringCellValue();
@@ -55,14 +49,15 @@ public class ExcelDataProvider
 	{
 		int row = DataProviderFactory.getexcel().getRowCount(sheetname);
 		int col = DataProviderFactory.getexcel().getColCount(sheetname);
-				
+		
 		Object[][] data = new Object[row-1][col];
 		
-		for(int i =1; i<row; i++)
+		for(int i=1; i<row; i++)
 		{
 			for(int j=0; j<col; j++)
 			{
 				data[i-1][j] = DataProviderFactory.getexcel().getExcelCelData(sheetname, i, j);
+				//System.out.println(data[i][j]);
 			}
 		}
 		return data;

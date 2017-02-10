@@ -32,7 +32,7 @@ public class TestBase
 	{
 		driver = BrowserFactory.getBrowser(browser);
 		driver.get(DataProviderFactory.getconfig().getAppUrl());
-		report = new ExtentReports(DataProviderFactory.getconfig().getReportsPath());
+		report = new ExtentReports(DataProviderFactory.getconfig().getReportsPath(), false);
 	}
 	
 	@AfterTest

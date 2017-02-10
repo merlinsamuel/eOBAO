@@ -5,7 +5,7 @@
   <parameter name="browser" value="Chrome"></parameter>
     <classes>
       <class name="testscripts.TC_SoleTrader"/>
-      <class name="testscripts.TC_BusinessDetails"/>
+	  <class name="testscripts.TC_BusinessDetails"/>
       </classes>
   </test> <!-- E2E -->
 </suite> <!-- ST -->

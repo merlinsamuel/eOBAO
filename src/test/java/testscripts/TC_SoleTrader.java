@@ -13,6 +13,7 @@ import utility.TestBase;
 
 public class TC_SoleTrader extends TestBase
 {
+	
 	@Test(dataProviderClass = ApplicationData.class, dataProvider = "IntroPg")
 	public void IntroPg(String StText_Line1, String StText_Line2, String StText_Line3, String StText_Line4, String StText_Line5, String StText_Line6, String StText_Line7, String StText_Line8, String StText_Line9, String StText_Line10, String StText_Line11)
 	{

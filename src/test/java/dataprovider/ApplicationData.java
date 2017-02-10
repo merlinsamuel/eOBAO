@@ -6,7 +6,6 @@ import Factory.DataProviderFactory;
 
 public class ApplicationData
 {
-
 	@DataProvider(name = "IntroPg")
 	public static Object[][] dpforIntroPg()
 	{
