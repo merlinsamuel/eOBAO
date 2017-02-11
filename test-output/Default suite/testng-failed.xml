@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="testscripts.TC_SoleTrader">
+      <class name="testscripts.TC_Header">
         <methods>
-          <include name="IntroPg"/>
+          <include name="ApplicationHeader"/>
         </methods>
-      </class> <!-- testscripts.TC_SoleTrader -->
+      </class> <!-- testscripts.TC_Header -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

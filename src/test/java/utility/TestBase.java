@@ -1,5 +1,8 @@
 package utility;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -60,6 +63,13 @@ public class TestBase
 	public static void EOPScreenshot(String Pgtitlename)
 	{
 		test.log(LogStatus.PASS, test.addScreenCapture(DataProviderFactory.getscreenshot().CaptureScreenshot(BrowserFactory.driver.getTitle())));
+	}
+	
+	//Current Date and Timestamp
+	public static String getCurrentTimestamp()
+	{
+		String timestamp = new SimpleDateFormat("yyy_MM_dd-HH.mm.ss").format(new Date());
+		return timestamp;
 	}
 	
 	//Explicit Wait until a WebElement is displayed in a page

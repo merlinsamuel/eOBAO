@@ -18,7 +18,7 @@ public class Screenshot
 		
 		File src = ts.getScreenshotAs(OutputType.FILE);
 		
-		String destination = DataProviderFactory.getconfig().getScreenshotPath()+testcasename+System.currentTimeMillis()+".JPEG";
+		String destination = DataProviderFactory.getconfig().getScreenshotPath()+testcasename+"-"+TestBase.getCurrentTimestamp()+".JPEG";
 		
 		try 
 		{
