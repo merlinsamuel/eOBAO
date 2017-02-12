@@ -13,6 +13,7 @@ import utility.TestBase;
 
 public class TC_Header extends TestBase
 {
+	
 	@Test
 	public void ApplicationHeader()
 	{
@@ -29,6 +30,8 @@ public class TC_Header extends TestBase
 			System.out.println(url);
 		}
 		
+		test.log(LogStatus.INFO, "SRC for header images printed");
+		
 		//-----------------------------------------------------------------------------------
 		
 		//Listing the number of frames, its id and name
@@ -41,13 +44,17 @@ public class TC_Header extends TestBase
 			System.out.println(frame_id);
 		}
 		
+		test.log(LogStatus.INFO, "Available frame ids printed");
+		
+		//-------------------------------------------------------------------------------------
+		
 		BrowserFactory.driver.switchTo().parentFrame();
 		
 		System.out.println(BrowserFactory.driver.getWindowHandle());
 		
 		TestBase.EOPScreenshot("Header");
 		
-		test.log(LogStatus.PASS, "Url of Images Printed - Success");
+		test.log(LogStatus.PASS, "TC_Header script Passed");
 	}
 
 }

@@ -16,12 +16,13 @@ public class TC_BusinessDetails extends TestBase
 	@Test(dataProviderClass = ApplicationData.class, dataProvider = "BusinessDetailsPg")
 	public void BD(String Txt_BusiName, String Txt_BusiTelephoneNumber, String Txt_BusiEmail, String Txt_MobileNumber, String Txt_BuildingNumber, String Txt_Street, String Txt_County, String Txt_Town, String Txt_PostCode, String Txt_TradingName, String Dropdown_stat_cor_add)
 	{
-		BusinessDetailsPg bd = PageFactory.initElements(BrowserFactory.driver, BusinessDetailsPg.class);
+		TestBase.VerifyHeaderObjects();
+		test.log(LogStatus.INFO, "Header Objects has been verified");
 		
+		BusinessDetailsPg bd = PageFactory.initElements(BrowserFactory.driver, BusinessDetailsPg.class);
 		test.log(LogStatus.INFO, "Business Details PageFactory Initialization");
 		
 		Assert.assertEquals(BrowserFactory.driver.getTitle(), bd.PAGE_TITLE);
-		
 		test.log(LogStatus.PASS, "Business Details PageTitle Verification - Success");
 		
 		TestBase.InputText(bd.Txt_BusiName, Txt_BusiName);

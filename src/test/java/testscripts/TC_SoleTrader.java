@@ -18,15 +18,14 @@ public class TC_SoleTrader extends TestBase
 	public void IntroPg(String StText_Line1, String StText_Line2, String StText_Line3, String StText_Line4, String StText_Line5, String StText_Line6, String StText_Line7, String StText_Line8, String StText_Line9, String StText_Line10, String StText_Line11)
 	{
 		test = report.startTest("SoleTrader_E2E"+"-"+TestBase.getCurrentTimestamp());
-		
-		test.log(LogStatus.PASS, "Browser Launch - Success");
 				
-		ImportantInfoPg Impinfo = PageFactory.initElements(BrowserFactory.driver, ImportantInfoPg.class);
+		TestBase.VerifyHeaderObjects();
+		test.log(LogStatus.PASS, "Browser Launch and Header Verification - Success");
 		
+		ImportantInfoPg Impinfo = PageFactory.initElements(BrowserFactory.driver, ImportantInfoPg.class);
 		test.log(LogStatus.INFO, "Intro PageFactory Initialization");
 		
 		Assert.assertEquals(BrowserFactory.driver.getTitle(), Impinfo.PAGE_TITLE);
-		
 		test.log(LogStatus.PASS, "Important Info PageTitle Verification - Success");
 		
 		Assert.assertEquals(Impinfo.StText_Line1.getText(), StText_Line1);

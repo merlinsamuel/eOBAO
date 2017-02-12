@@ -6,6 +6,7 @@ import java.util.Date;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -22,6 +23,7 @@ import com.relevantcodes.extentreports.LogStatus;
 
 import Factory.BrowserFactory;
 import Factory.DataProviderFactory;
+import pages.Header;
 
 public class TestBase
 {
@@ -44,6 +46,16 @@ public class TestBase
 		BrowserFactory.closeBrowser();
 		report.endTest(test);
 		report.flush();
+	}
+	
+	//Method to Verify Header
+	public static void VerifyHeaderObjects()
+	{
+		Header header = PageFactory.initElements(BrowserFactory.driver, Header.class);
+		header.H_currentSection.isDisplayed();
+		header.H_PgHeader.isDisplayed();
+		header.H_ProgIndicator.isDisplayed();
+		header.H_RBSlogo.isDisplayed();
 	}
 	
 	//Failed Screenshot
