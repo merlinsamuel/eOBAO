@@ -45,6 +45,11 @@ public class ConfigDataProvider
 		return prop.getProperty("IEDriverPath");
 	}
 	
+	public String getFireFoxDriverPath()
+	{
+		return prop.getProperty("FireFoxDriverPath");
+	}
+	
 	public String getScreenshotPath()
 	{
 		return prop.getProperty("ScreenshotPath");

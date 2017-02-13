@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="HeaderSuite">
-  <test name="HeaderTest">
-   <parameter name="browser" value="Chrome"></parameter>
+<suite name="HeaderSuite" >
+
+  <test name="HeaderTest Chrome">
+   <parameter name="browser" value="chrome"></parameter>
     <classes>
       <class name="testscripts.TC_Header"/>
     </classes>
   </test> <!-- HeaderTest -->
+  
+    <test name="HeaderTest ff">
+   <parameter name="browser" value="firefox"></parameter>
+    <classes>
+      <class name="testscripts.TC_Header"/>
+    </classes>
+  </test> <!-- HeaderTest -->
+ 
 </suite> <!-- HeaderSuite -->

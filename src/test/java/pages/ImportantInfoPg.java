@@ -13,7 +13,7 @@ WebDriver driver;
 	{
 		this.driver=driver;
 	}
-	public static final String PAGE_URL = "https://www.natwest.com/apps/secure/applicationforms_dda/asp/form.asp?appid=763&CCF=";
+	
 	public String PAGE_TITLE = "Royal Bank of Scotland - RBS Business Sole Trader Current Account application form - Important Information";
 	
 	public @FindBy (how=How.CSS, using=".section-title-cell>h1") WebElement StText_Line1;

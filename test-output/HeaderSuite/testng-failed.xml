@@ -1,18 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [HeaderSuite]">
-  <parameter name="browser" value="Chrome"/>
-  <test name="HeaderTest(failed)">
-    <parameter name="browser" value="Chrome"/>
+<suite name="Failed suite [HeaderSuite]" parallel="tests">
+  <parameter name="browser" value="Firefox"/>
+  <test name="HeaderTest Chrome(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
     <classes>
       <class name="testscripts.TC_Header">
         <methods>
-          <include name="Setup"/>
-          <include name="FailedScreenshot"/>
           <include name="ApplicationHeader"/>
-          <include name="Teardown"/>
         </methods>
       </class> <!-- testscripts.TC_Header -->
     </classes>
-  </test> <!-- HeaderTest(failed) -->
+  </test> <!-- HeaderTest Chrome(failed) -->
+  <test name="HeaderTest FF(failed)" parallel="tests">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="testscripts.TC_Header">
+        <methods>
+          <include name="ApplicationHeader"/>
+        </methods>
+      </class> <!-- testscripts.TC_Header -->
+    </classes>
+  </test> <!-- HeaderTest FF(failed) -->
 </suite> <!-- Failed suite [HeaderSuite] -->

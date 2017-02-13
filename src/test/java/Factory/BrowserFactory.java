@@ -15,6 +15,7 @@ public class BrowserFactory
 	{
 		if (browsername.equalsIgnoreCase("Firefox"))
 		{
+			System.setProperty("webdriver.gecko.driver", DataProviderFactory.getconfig().getFireFoxDriverPath());
 			driver = new FirefoxDriver();
 		}
 		else if (browsername.equalsIgnoreCase("Chrome"))

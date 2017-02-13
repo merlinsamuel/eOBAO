@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="ST">
-  <test name="E2E">
+
+  <test name="E2E chrome">
   <parameter name="browser" value="Chrome"></parameter>
     <classes>
       <class name="testscripts.TC_SoleTrader"/>
 	  <class name="testscripts.TC_BusinessDetails"/>
       </classes>
   </test> <!-- E2E -->
+  
+    <test name="E2E ff">
+  <parameter name="browser" value="firefox"></parameter>
+    <classes>
+      <class name="testscripts.TC_SoleTrader"/>
+	  <class name="testscripts.TC_BusinessDetails"/>
+      </classes>
+  </test> <!-- E2E -->
+  
+  
 </suite> <!-- ST -->

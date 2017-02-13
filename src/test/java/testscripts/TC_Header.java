@@ -55,6 +55,7 @@ public class TC_Header extends TestBase
 		TestBase.EOPScreenshot("Header");
 		
 		test.log(LogStatus.PASS, "TC_Header script Passed");
-	}
+		
+		}
 
 }
