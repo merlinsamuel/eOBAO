@@ -1,26 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [ST]">
-  <parameter name="browser" value="Chrome"/>
-  <parameter name="index" value="1"/>
-  <parameter name="testid" value="TC001"/>
-  <test name="E2E chrome(failed)">
-    <parameter name="browser" value="Chrome"/>
-    <parameter name="index" value="1"/>
-    <parameter name="testid" value="TC001"/>
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="testscripts.TC_SoleTrader">
+      <class name="test.SampleTestNG">
         <methods>
-          <include name="IntroPg" invocation-numbers="0"/>
-          <include name="Setup"/>
-          <include name="FailedScreenshot"/>
+          <include name="TC001"/>
         </methods>
-      </class> <!-- testscripts.TC_SoleTrader -->
-      <class name="testscripts.TC_BusinessDetails">
-        <methods>
-          <include name="BD"/>
-        </methods>
-      </class> <!-- testscripts.TC_BusinessDetails -->
+      </class> <!-- test.SampleTestNG -->
     </classes>
-  </test> <!-- E2E chrome(failed) -->
-</suite> <!-- Failed suite [ST] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

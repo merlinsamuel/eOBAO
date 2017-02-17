@@ -4,9 +4,7 @@
 
   <test name="E2E chrome">
   <parameter name="browser" value="Chrome"></parameter>
-  <parameter name="testid" value="TC001"></parameter>
-  <parameter name="index" value="1"></parameter>
-    <classes>
+     <classes>
       <class name="testscripts.TC_SoleTrader"/>
 	  <class name="testscripts.TC_BusinessDetails"/>
       </classes>

@@ -1,57 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="6145" started-at="2017-02-15T01:48:50Z" finished-at="2017-02-15T01:48:56Z">
+  <suite name="Default suite" duration-ms="3685" started-at="2017-02-17T01:49:05Z" finished-at="2017-02-17T01:49:09Z">
     <groups>
     </groups>
-    <test name="Test01" duration-ms="4819" started-at="2017-02-15T01:48:50Z" finished-at="2017-02-15T01:48:55Z">
+    <test name="Default test" duration-ms="3685" started-at="2017-02-17T01:49:05Z" finished-at="2017-02-17T01:49:09Z">
       <class name="test.SampleTestNG">
-        <test-method status="PASS" signature="readallData()[pri:0, instance:test.SampleTestNG@28d25987]" name="readallData" duration-ms="4737" started-at="2017-02-14T17:48:50Z" finished-at="2017-02-14T17:48:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- readallData -->
-        <test-method status="PASS" signature="testdataforsinglerun(java.lang.String, int)[pri:0, instance:test.SampleTestNG@28d25987]" name="testdataforsinglerun" duration-ms="20" started-at="2017-02-14T17:48:55Z" finished-at="2017-02-14T17:48:55Z">
+        <test-method status="PASS" signature="TC001(java.lang.String, java.lang.String)[pri:0, instance:test.SampleTestNG@26653222]" name="TC001" duration-ms="37" started-at="2017-02-16T17:49:09Z" data-provider="TC001" finished-at="2017-02-16T17:49:09Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[TC001]]>
+                <![CDATA[07111234111]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[1]]>
+                <![CDATA[test.test@test.com]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testdataforsinglerun -->
+        </test-method> <!-- TC001 -->
       </class> <!-- test.SampleTestNG -->
-    </test> <!-- Test01 -->
-    <test name="Test02" duration-ms="1246" started-at="2017-02-15T01:48:55Z" finished-at="2017-02-15T01:48:56Z">
-      <class name="test.SampleTestNG">
-        <test-method status="PASS" signature="readallData()[pri:0, instance:test.SampleTestNG@4dfa3a9d]" name="readallData" duration-ms="1209" started-at="2017-02-14T17:48:55Z" finished-at="2017-02-14T17:48:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- readallData -->
-        <test-method status="PASS" signature="testdataforsinglerun(java.lang.String, int)[pri:0, instance:test.SampleTestNG@4dfa3a9d]" name="testdataforsinglerun" duration-ms="13" started-at="2017-02-14T17:48:56Z" finished-at="2017-02-14T17:48:56Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[TC002]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[2]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testdataforsinglerun -->
-      </class> <!-- test.SampleTestNG -->
-    </test> <!-- Test02 -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

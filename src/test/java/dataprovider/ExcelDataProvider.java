@@ -12,6 +12,7 @@ public class ExcelDataProvider
 {
 	XSSFWorkbook wb;
 	
+	
 	public ExcelDataProvider()
 	{
 		File src = new File(DataProviderFactory.getconfig().getTestDataPath());
@@ -39,28 +40,45 @@ public class ExcelDataProvider
 		return col;
 	}
 	
-	public String getExcelCelData(String sheetname, int row, int col)
+	public String getCelData(String sheetname, int row, int col)
 	{
 		String data = wb.getSheet(sheetname).getRow(row).getCell(col).getStringCellValue();
 		return data;
 	}
 	
-	public Object[][] ReadExceldata(String sheetname)
+	public Object[][] ReadExceldata(String testcaseid, String sheetname)
 	{
 		int row = DataProviderFactory.getexcel().getRowCount(sheetname);
 		int col = DataProviderFactory.getexcel().getColCount(sheetname);
 		
-		Object[][] data = new Object[row-1][col];
-		
-		for(int i=1; i<row; i++)
+		Object[][] data = new Object[row][col];
+				
+		//Get all test data from excel tab
+		for(int i=0; i<row; i++)
 		{
 			for(int j=0; j<col; j++)
 			{
-				data[i-1][j] = DataProviderFactory.getexcel().getExcelCelData(sheetname, i, j);
-				//System.out.println(data[i][j]);
+				data[i][j] = DataProviderFactory.getexcel().getCelData(sheetname, i, j);
 			}
 		}
-		return data;
+		
+		
+		//Match the Testcase id from XML with array collection and return the test data pertaining to particular testcaseid
+		Object[][] testdata = new Object[1][col-1];
+		
+		for (int index=1; index<row; index++)
+		{
+			if (data[index][0].equals(testcaseid))
+			{
+				for(int i=0; i<1; i++)
+				{
+					for(int j=0; j<col-1; j++)
+					{
+						testdata[i][j]= DataProviderFactory.getexcel().getCelData(sheetname, index, j+1);
+					}
+				}
+			}
+		}
+		return testdata;
 	}
-
 }

@@ -5,7 +5,7 @@
     <classes>
       <class name="test.SampleTestNG">
         <methods>
-          <include name="testdataforsinglerun"/>
+          <include name="TC001"/>
         </methods>
       </class> <!-- test.SampleTestNG -->
     </classes>

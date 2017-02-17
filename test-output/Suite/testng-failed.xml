@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]">
+<suite name="Failed suite [Suite]" allow-return-values="true">
   <parameter name="testcaseid" value="TC001"/>
-  <test name="Test(failed)">
+  <test name="Test01(failed)">
     <parameter name="testcaseid" value="TC001"/>
     <classes>
       <class name="test.SampleTestNG">
         <methods>
-          <include name="testdata" invocation-numbers="0"/>
+          <include name="TC001"/>
         </methods>
       </class> <!-- test.SampleTestNG -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Test01(failed) -->
 </suite> <!-- Failed suite [Suite] -->

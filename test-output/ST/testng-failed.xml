@@ -2,23 +2,19 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [ST]">
   <parameter name="browser" value="Chrome"/>
-  <parameter name="index" value="1"/>
-  <parameter name="testid" value="TC001"/>
   <test name="E2E chrome(failed)">
     <parameter name="browser" value="Chrome"/>
-    <parameter name="index" value="1"/>
-    <parameter name="testid" value="TC001"/>
     <classes>
       <class name="testscripts.TC_SoleTrader">
         <methods>
-          <include name="IntroPg" invocation-numbers="0"/>
+          <include name="IntroPg"/>
           <include name="Setup"/>
-          <include name="FailedScreenshot"/>
         </methods>
       </class> <!-- testscripts.TC_SoleTrader -->
       <class name="testscripts.TC_BusinessDetails">
         <methods>
-          <include name="BD"/>
+          <include name="FailedScreenshot"/>
+          <include name="BD" invocation-numbers="0"/>
         </methods>
       </class> <!-- testscripts.TC_BusinessDetails -->
     </classes>

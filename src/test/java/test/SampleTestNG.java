@@ -1,6 +1,6 @@
 package test;
 
-import org.testng.annotations.Parameters;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import Factory.DataProviderFactory;
@@ -8,40 +8,63 @@ import Factory.DataProviderFactory;
 public class SampleTestNG
 {
 	Object[][] data;
+	Object[][] testdata;
 	int Colcount;
+	int Rowcount;
+		
 	
-	@Test(priority = 1)
-	public void readallData()
+	public Object[][] readallData(String testcaseid, String sheetname)
 	{
-		int Rowcount = DataProviderFactory.getexcel().getRowCount("sample");
-		Colcount = DataProviderFactory.getexcel().getColCount("sample");
+		Rowcount = DataProviderFactory.getexcel().getRowCount(sheetname);
+		Colcount = DataProviderFactory.getexcel().getColCount(sheetname);
+		
+		//System.out.println("Row Count: "+Rowcount);
+		//System.out.println("Col count: "+Colcount);
 		
 		data=new Object[Rowcount][Colcount];
 				
-		//Get all data from excel tab including testcase id
+		//Get all test data from excel tab
 		for(int i=0; i<Rowcount; i++)
 		{
 			for(int j=0; j<Colcount; j++)
 			{
-			data[i][j] = DataProviderFactory.getexcel().getExcelCelData("sample", i, j);
+			data[i][j] = DataProviderFactory.getexcel().getCelData(sheetname, i, j);
 			}
 		}
-	}
-	
-	
-	@Parameters({"testcaseid", "testrun"})
-	@Test(priority = 2)
-	public void testdataforsinglerun(String testid, int index)
-	{
-			
-		if (data[index][0].equals(testid))
+		
+		//---------------------------------------------------------------------------------
+		
+		//Find a matching row and retrieve the data of that particular row
+		testdata = new Object[1][Colcount-1];
+		for (int index=1; index<Rowcount; index++)
 		{
-			for(int j=1; j<Colcount; j++)
+			if (data[index][0].equals(testcaseid))
 			{
-				System.out.println("Data of "+testid+" are: "+data[index][j]);
+				for(int i=0; i<1; i++)
+				{
+					for(int j=0; j<Colcount-1; j++)
+					{
+						testdata[i][j]= DataProviderFactory.getexcel().getCelData(sheetname, index, j+1);
+						//System.out.println("Test Data for TC001: "+testdata[i][j]);
+					}
+				}
 			}
-			
 		}
+		//System.out.println("Array length: "+testdata[0].length);  
+		return testdata;
 	}
 	
+	@Test(dataProvider = "TC001")
+	public void TC001(String txt1, String txt2)
+	{
+		System.out.println(txt1);
+		System.out.println(txt2);
+	}
+	
+	@DataProvider(name = "TC001")
+	public Object[][] dataforTC001()
+	{
+		return readallData("TC001","sample");
+	}
 }
+		
