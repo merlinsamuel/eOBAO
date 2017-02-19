@@ -7,8 +7,8 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
-import Factory.BrowserFactory;
-import Factory.DataProviderFactory;
+import factory.BrowserFactory;
+import factory.DataProviderFactory;
 
 public class Screenshot 
 {

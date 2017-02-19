@@ -2,7 +2,7 @@ package dataprovider;
 
 import org.testng.annotations.DataProvider;
 
-import Factory.DataProviderFactory;
+import factory.DataProviderFactory;
 
 public class ApplicationData
 {

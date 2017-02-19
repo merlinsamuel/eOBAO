@@ -21,8 +21,8 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
-import Factory.BrowserFactory;
-import Factory.DataProviderFactory;
+import factory.BrowserFactory;
+import factory.DataProviderFactory;
 import pages.Header;
 
 public class TestBase
@@ -36,7 +36,6 @@ public class TestBase
 	public void Setup(String browser)
 	{
 		driver = BrowserFactory.getBrowser(browser);
-		driver.get(DataProviderFactory.getconfig().getAppUrl());
 		report = new ExtentReports(DataProviderFactory.getconfig().getReportsPath(), false);
 	}
 	
@@ -106,11 +105,11 @@ public class TestBase
 		Assert.assertEquals(element.getAttribute("value"), input);
 	}
 	
+	//WebElement Actions - Dropdown selection
 	public static void DropDownSelection(WebElement element, String dropdowntext)
 	{
 		Select dropdown = new Select(element);
 		dropdown.selectByVisibleText(dropdowntext);
-		//Assert.assertTrue(element.isSelected());
 	}
 
 }

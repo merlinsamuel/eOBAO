@@ -74,7 +74,6 @@
   			<configuration>
   			<suiteXmlFiles>
   			<suiteXmlFile>SoleTrader_E2E.xml</suiteXmlFile>
-  			<suiteXmlFile>Header.xml</suiteXmlFile>
   			</suiteXmlFiles>
   			</configuration>
   		</plugin>

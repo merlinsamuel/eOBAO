@@ -10,6 +10,7 @@ public class Javatest
 	{
 		String timestamp = new SimpleDateFormat("YYYY_MM_dd-HH.mm.ss").format(new Date());
 		System.out.println(timestamp);
-					
+		
 	}
+	
 }

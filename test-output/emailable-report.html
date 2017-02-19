@@ -31,19 +31,85 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">3.7 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">E2E chrome</td><td class="numi">2</td><td class="numi">2</td><td class="numi">0</td><td class="numi">0</td><td class="numi">34.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">E2E ff</td><td class="numi">2</td><td class="numi">2</td><td class="numi">0</td><td class="numi">0</td><td class="numi">29.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="total"><td>Total</td>
+<td class="numi">4</td><td class="numi">4</td><td class="numi">0</td><td class="numi">0</td><td class="numi">63.3 seconds</td><td colspan="2">&nbsp;</td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">Default test &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="1">test.SampleTestNG</td><td><a href="#m1"><b>TC001</b>  </a></td><td class="numi">1</td><td>1487296149301</td><td class="numi">37</td></tr>
+<tr><th colspan="4">E2E chrome &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="2">testscripts.TC_SoleTrader</td><td><a href="#m1"><b>IntroPg</b>  </a></td><td class="numi">1</td><td>1487473493658</td><td class="numi">12525</td></tr><tr class="passedodd"><td><a href="#m2"><b>BD</b>  </a></td><td class="numi">1</td><td>1487473508537</td><td class="numi">4962</td></tr>
+<tr><th colspan="4">E2E ff &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="2">testscripts.TC_SoleTrader</td><td><a href="#m3"><b>IntroPg</b>  </a></td><td class="numi">1</td><td>1487473530346</td><td class="numi">7430</td></tr><tr class="passedodd"><td><a href="#m4"><b>BD</b>  </a></td><td class="numi">1</td><td>1487473540669</td><td class="numi">2176</td></tr>
 </table>
-<h1>Default test</h1>
-<h2 id="m1">test.SampleTestNG:TC001</h2>
+<h1>E2E chrome</h1>
+<h2 id="m1">testscripts.TC_SoleTrader:BD</h2>
 <table cellspacing="0" cellpadding="0" class="result">
-<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
-<tr class="param stripe"><td>07111234111</td>
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th></tr>
+<tr class="param stripe"><td>St Andrew Limited</td>
+<td>123456789</td>
 <td>test.test@test.com</td>
+<td>07111234111</td>
+<td>30</td>
+<td>Neilarmstrong Street</td>
+<td>Los Angeles</td>
+<td>Montebello</td>
+<td>E126SE</td>
+<td>Andrews</td>
+<td>Trading Address</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">testscripts.TC_SoleTrader:IntroPg</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th></tr>
+<tr class="param stripe"><td>Important Information</td>
+<td>This is stage 1 of 5. Please do not use your browser&apos;s &apos;back&apos; button to move back or you may lose some of the information you have already entered.</td>
+<td>Thank you for choosing a RBS Business Account.</td>
+<td>Please read the information below before proceeding to apply</td>
+<td>It will take you approx. 20 minutes to fill this application out.</td>
+<td>The following application is for New Business Banking Customers only - if you wish to open a new account for an existing Business Account please contact - call DIRECT BANKING FOR BUSINESS 0345 6002230.</td>
+<td>We will ask you for information about yourself and your business therefore please have this to hand as you are unable to save part way through. Personal information required, Name, Address &amp; Date of entry, Previous Address if less than 3 years. Date of Birth &amp; Country of Birth, years of experience in this role and any countries you are registered for tax purposes.</td>
+<td>Please ensure you complete accurately as incorrect information may delay your application.</td>
+<td>You will receive a phone call/email from one of our Business Specialists in order to confirm the information submitted and ensure we fully understand what your business is about and how we can support.</td>
+<td>We will then post or email your documents for signing. If we require ID you will need to visit one of our branches.</td>
+<td>Once we receive your signed application, assuming all is ok, we will open the account and advise you of your account number.</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>E2E ff</h1>
+<h2 id="m3">testscripts.TC_SoleTrader:IntroPg</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th></tr>
+<tr class="param stripe"><td>Important Information</td>
+<td>This is stage 1 of 5. Please do not use your browser&apos;s &apos;back&apos; button to move back or you may lose some of the information you have already entered.</td>
+<td>Thank you for choosing a RBS Business Account.</td>
+<td>Please read the information below before proceeding to apply</td>
+<td>It will take you approx. 20 minutes to fill this application out.</td>
+<td>The following application is for New Business Banking Customers only - if you wish to open a new account for an existing Business Account please contact - call DIRECT BANKING FOR BUSINESS 0345 6002230.</td>
+<td>We will ask you for information about yourself and your business therefore please have this to hand as you are unable to save part way through. Personal information required, Name, Address &amp; Date of entry, Previous Address if less than 3 years. Date of Birth &amp; Country of Birth, years of experience in this role and any countries you are registered for tax purposes.</td>
+<td>Please ensure you complete accurately as incorrect information may delay your application.</td>
+<td>You will receive a phone call/email from one of our Business Specialists in order to confirm the information submitted and ensure we fully understand what your business is about and how we can support.</td>
+<td>We will then post or email your documents for signing. If we require ID you will need to visit one of our branches.</td>
+<td>Once we receive your signed application, assuming all is ok, we will open the account and advise you of your account number.</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">testscripts.TC_SoleTrader:BD</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th></tr>
+<tr class="param stripe"><td>St Andrew Limited</td>
+<td>123456789</td>
+<td>test.test@test.com</td>
+<td>07111234111</td>
+<td>30</td>
+<td>Neilarmstrong Street</td>
+<td>Los Angeles</td>
+<td>Montebello</td>
+<td>E126SE</td>
+<td>Andrews</td>
+<td>Trading Address</td>
 </tr>
 </table>
 <p class="totop"><a href="#summary">back to summary</a></p>

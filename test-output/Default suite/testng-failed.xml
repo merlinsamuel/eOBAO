@@ -5,7 +5,7 @@
     <classes>
       <class name="test.SampleTestNG">
         <methods>
-          <include name="TC001"/>
+          <include name="PrintA" invocation-numbers="0"/>
         </methods>
       </class> <!-- test.SampleTestNG -->
     </classes>

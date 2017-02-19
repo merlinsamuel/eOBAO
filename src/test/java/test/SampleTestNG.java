@@ -1,19 +1,19 @@
 package test;
 
-import org.testng.annotations.DataProvider;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import Factory.DataProviderFactory;
+import factory.DataProviderFactory;
 
 public class SampleTestNG
 {
 	Object[][] data;
-	Object[][] testdata;
+	Object[] testdata;
 	int Colcount;
 	int Rowcount;
 		
-	
-	public Object[][] readallData(String testcaseid, String sheetname)
+	@Parameters({"testcaseid"})
+	public Object[] readallData(String testcaseid, String sheetname)
 	{
 		Rowcount = DataProviderFactory.getexcel().getRowCount(sheetname);
 		Colcount = DataProviderFactory.getexcel().getColCount(sheetname);
@@ -35,7 +35,7 @@ public class SampleTestNG
 		//---------------------------------------------------------------------------------
 		
 		//Find a matching row and retrieve the data of that particular row
-		testdata = new Object[1][Colcount-1];
+		testdata = new Object[Colcount-1];
 		for (int index=1; index<Rowcount; index++)
 		{
 			if (data[index][0].equals(testcaseid))
@@ -44,8 +44,8 @@ public class SampleTestNG
 				{
 					for(int j=0; j<Colcount-1; j++)
 					{
-						testdata[i][j]= DataProviderFactory.getexcel().getCelData(sheetname, index, j+1);
-						//System.out.println("Test Data for TC001: "+testdata[i][j]);
+						testdata[j]= DataProviderFactory.getexcel().getCelData(sheetname, index, j+1);
+						//System.out.println("Test Data for TC001: "+testdata[j]);
 					}
 				}
 			}
@@ -54,17 +54,19 @@ public class SampleTestNG
 		return testdata;
 	}
 	
-	@Test(dataProvider = "TC001")
-	public void TC001(String txt1, String txt2)
+	//@Parameters({"testcaseid"})
+	@Test
+	public void PrintA(String testcaseid)
 	{
-		System.out.println(txt1);
-		System.out.println(txt2);
-	}
-	
-	@DataProvider(name = "TC001")
-	public Object[][] dataforTC001()
-	{
-		return readallData("TC001","sample");
+		SampleTestNG obj = new SampleTestNG();
+		
+		Object[] data = obj.readallData(testcaseid, "sample");
+		System.out.println("No of elements in Array: "+data.length);
+		
+		for(int i=0; i<data.length; i++)
+		{
+			System.out.println(data[i]);
+		}
 	}
 }
 		
