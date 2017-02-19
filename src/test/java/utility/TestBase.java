@@ -63,8 +63,7 @@ public class TestBase
 	{
 		if (result.getStatus()==ITestResult.FAILURE)
 		{
-			String Screenshotpath = DataProviderFactory.getscreenshot().CaptureScreenshot(result.getName());
-			System.out.println(Screenshotpath);
+			String Screenshotpath = DataProviderFactory.getscreenshot().CaptureScreenshot(BrowserFactory.driver, result.getName());
 			test.log(LogStatus.FAIL, test.addScreenCapture(Screenshotpath));
 		}
 
@@ -73,7 +72,7 @@ public class TestBase
 	//End of Page Screenshot
 	public static void EOPScreenshot(String Pgtitlename)
 	{
-		test.log(LogStatus.PASS, test.addScreenCapture(DataProviderFactory.getscreenshot().CaptureScreenshot(BrowserFactory.driver.getTitle())));
+		test.log(LogStatus.PASS, test.addScreenCapture(DataProviderFactory.getscreenshot().CaptureScreenshot(BrowserFactory.driver, BrowserFactory.driver.getTitle())));
 	}
 	
 	//Current Date and Timestamp

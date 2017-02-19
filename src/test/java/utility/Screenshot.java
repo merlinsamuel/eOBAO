@@ -6,15 +6,16 @@ import java.io.IOException;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 
-import factory.BrowserFactory;
 import factory.DataProviderFactory;
 
 public class Screenshot 
 {
-	public String CaptureScreenshot(String testcasename)
+
+	public String CaptureScreenshot(WebDriver driver, String testcasename)
 	{
-		TakesScreenshot ts = (TakesScreenshot) BrowserFactory.driver;
+		TakesScreenshot ts = (TakesScreenshot) driver;
 		
 		File src = ts.getScreenshotAs(OutputType.FILE);
 		

@@ -16,7 +16,7 @@ public class DataProviderFactory
 	
 	public static ExcelDataProvider getexcel()
 	{
-		ExcelDataProvider excel = new ExcelDataProvider();
+		ExcelDataProvider excel = new ExcelDataProvider(BrowserFactory.driver);
 		return excel;
 	}
 	

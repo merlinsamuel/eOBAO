@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="test.SampleTestNG">
+      <class name="testscripts.TC_SoleTrader">
         <methods>
-          <include name="PrintA" invocation-numbers="0"/>
+          <include name="IntroPg"/>
+          <include name="BD"/>
         </methods>
-      </class> <!-- test.SampleTestNG -->
+      </class> <!-- testscripts.TC_SoleTrader -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

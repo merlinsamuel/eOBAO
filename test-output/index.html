@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-ST">
-              <span class="suite-name border-passed">ST</span>
+              <span class="suite-name border-failed">ST</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -90,7 +90,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-ST" class="hide-methods failed suite-ST"> (hide)</a> <!-- hide-methods failed suite-ST -->
+                      <a href="#" panel-name="suite-ST" class="show-methods failed suite-ST"> (show)</a> <!-- show-methods failed suite-ST -->
+                    </span>
+                    <div class="method-list-content failed suite-ST">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-ST" title="testscripts.TC_SoleTrader" hash-for-method="IntroPg(Important Information, This is stage 1 of 5. Please do not use your browser&#039;s &#039;back&#039; button to move ...)">IntroPg(Important Information, This is stage 1 of 5. Please do not use your browser's 'back' button to move ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-ST -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -99,21 +113,6 @@
                       <a href="#" panel-name="suite-ST" class="show-methods passed suite-ST"> (show)</a> <!-- show-methods passed suite-ST -->
                     </span>
                     <div class="method-list-content passed suite-ST">
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-ST" title="testscripts.TC_SoleTrader" hash-for-method="BD(St Andrew Limited, 123456789, test.test@test.com, 07111234111, 30, Neilarmstrong Street, Los Angeles...)">BD(St Andrew Limited, 123456789, test.test@test.com, 07111234111, 30, Neilarmstrong Street, Los Angeles...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-ST" title="testscripts.TC_SoleTrader" hash-for-method="BD(St Andrew Limited, 123456789, test.test@test.com, 07111234111, 30, Neilarmstrong Street, Los Angeles...)">BD(St Andrew Limited, 123456789, test.test@test.com, 07111234111, 30, Neilarmstrong Street, Los Angeles...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-ST" title="testscripts.TC_SoleTrader" hash-for-method="IntroPg(Important Information, This is stage 1 of 5. Please do not use your browser&#039;s &#039;back&#039; button to move ...)">IntroPg(Important Information, This is stage 1 of 5. Please do not use your browser's 'back' button to move ...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-ST" title="testscripts.TC_SoleTrader" hash-for-method="IntroPg(Important Information, This is stage 1 of 5. Please do not use your browser&#039;s &#039;back&#039; button to move ...)">IntroPg(Important Information, This is stage 1 of 5. Please do not use your browser's 'back' button to move ...)</a> <!-- method navigator-link -->
@@ -131,36 +130,98 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-ST" class="panel ST">
-          <div class="suite-ST-class-passed">
+          <div class="suite-ST-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">testscripts.TC_SoleTrader</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="BD(St Andrew Limited, 123456789, test.test@test.com, 07111234111, 30, Neilarmstrong Street, Los Angeles...)">
-                  </a> <!-- BD(St Andrew Limited, 123456789, test.test@test.com, 07111234111, 30, Neilarmstrong Street, Los Angeles...) -->
-                  <span class="method-name">BD</span>
-                  <span class="parameters">(St Andrew Limited, 123456789, test.test@test.com, 07111234111, 30, Neilarmstrong Street, Los Angeles, Montebello, E126SE, Andrews, Trading Address)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="BD(St Andrew Limited, 123456789, test.test@test.com, 07111234111, 30, Neilarmstrong Street, Los Angeles...)">
-                  </a> <!-- BD(St Andrew Limited, 123456789, test.test@test.com, 07111234111, 30, Neilarmstrong Street, Los Angeles...) -->
-                  <span class="method-name">BD</span>
-                  <span class="parameters">(St Andrew Limited, 123456789, test.test@test.com, 07111234111, 30, Neilarmstrong Street, Los Angeles, Montebello, E126SE, Andrews, Trading Address)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="IntroPg(Important Information, This is stage 1 of 5. Please do not use your browser&#039;s &#039;back&#039; button to move ...)">
                   </a> <!-- IntroPg(Important Information, This is stage 1 of 5. Please do not use your browser's 'back' button to move ...) -->
                   <span class="method-name">IntroPg</span>
                   <span class="parameters">(Important Information, This is stage 1 of 5. Please do not use your browser's 'back' button to move back or you may lose some of the information you have already entered., Thank you for choosing a RBS Business Account., Please read the information below before proceeding to apply, It will take you approx. 20 minutes to fill this application out., The following application is for New Business Banking Customers only - if you wish to open a new account for an existing Business Account please contact - call DIRECT BANKING FOR BUSINESS 0345 6002230., We will ask you for information about yourself and your business therefore please have this to hand as you are unable to save part way through. Personal information required, Name, Address & Date of entry, Previous Address if less than 3 years. Date of Birth & Country of Birth, years of experience in this role and any countries you are registered for tax purposes., Please ensure you complete accurately as incorrect information may delay your application., You will receive a phone call/email from one of our Business Specialists in order to confirm the information submitted and ensure we fully understand what your business is about and how we can support., We will then post or email your documents for signing. If we require ID you will need to visit one of our branches., Once we receive your signed application, assuming all is ok, we will open the account and advise you of your account number.)</span>
+                  <div class="stack-trace"><b>"org.openqa.selenium.WebDriverException: Tried to run command without establishing a connection
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;LAPTOP-067IT145&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_122-ea&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, marionette=true, firefoxOptions={args=[], prefs={}}, appBuildId=20170125094131, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=7844, browserVersion=51.0.1, platformVersion=10.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=windows_nt}]
+Session ID: 0c27866a-681e-4530-a370-701888341301
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:127)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:93)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:42)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:274)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at utility.TestBase.ClickElement(TestBase.java:97)
+	at testscripts.TC_SoleTrader.IntroPg(TC_SoleTrader.java:48)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 24 stack frames<br/> org.openqa.selenium.WebDriverException: Tried to run command without establishing a connection
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;LAPTOP-067IT145&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_122-ea&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, marionette=true, firefoxOptions={args=[], prefs={}}, appBuildId=20170125094131, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=7844, browserVersion=51.0.1, platformVersion=10.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=windows_nt}]
+Session ID: 0c27866a-681e-4530-a370-701888341301
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:127)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:93)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:42)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:274)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at utility.TestBase.ClickElement(TestBase.java:97)
+	at testscripts.TC_SoleTrader.IntroPg(TC_SoleTrader.java:48)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+"</b><br>sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br>sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br>sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br>java.lang.reflect.Constructor.newInstance(Constructor.java:423)<br>org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:127)<br>org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:93)<br>org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:42)<br>org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)<br>org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)<br>org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)<br>org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:274)<br>org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:498)<br>org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)<br>com.sun.proxy.$Proxy10.click(Unknown Source)<br>utility.TestBase.ClickElement(TestBase.java:97)<br>testscripts.TC_SoleTrader.IntroPg(TC_SoleTrader.java:48)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:498)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.access$000(SuiteRunner.java:37)<br>org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)<br>org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)<br>java.util.concurrent.FutureTask.run(FutureTask.java:266)<br>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)<br>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)<br>java.lang.Thread.run(Thread.java:745)<br>
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ST-class-failed -->
+          <div class="suite-ST-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testscripts.TC_SoleTrader</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="IntroPg(Important Information, This is stage 1 of 5. Please do not use your browser&#039;s &#039;back&#039; button to move ...)">
@@ -180,7 +241,7 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;ST&quot;&gt;
+&lt;suite name=&quot;ST&quot; parallel=&quot;tests&quot;&gt;
   &lt;test name=&quot;E2E chrome&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;Chrome&quot;/&gt;
     &lt;classes&gt;
@@ -233,28 +294,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'IntroPg')
 data.setCell(0, 2, 'testscripts.TC_SoleTrader')
-data.setCell(0, 3, 12525);
+data.setCell(0, 3, 11274);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'IntroPg')
 data.setCell(1, 2, 'testscripts.TC_SoleTrader')
-data.setCell(1, 3, 7430);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'BD')
-data.setCell(2, 2, 'testscripts.TC_SoleTrader')
-data.setCell(2, 3, 4962);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'BD')
-data.setCell(3, 2, 'testscripts.TC_SoleTrader')
-data.setCell(3, 3, 2176);
+data.setCell(1, 3, 11168);
 window.suiteTableData['ST']= { tableData: data, tableDiv: 'times-div-ST'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 27 seconds</span>
+              <span class="suite-total-time">Total running time: 22 seconds</span>
               <div id="times-div-ST">
               </div> <!-- times-div-ST -->
             </div> <!-- times-div -->
@@ -282,53 +335,37 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">testscripts.TC_SoleTrader</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
+                <span class="method-name">Setup(firefox)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-test before">
                 <span class="method-name">Setup(Chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">IntroPg(Important Information, This is stage 1 of 5. Please do not use your browser's 'back' button to move ...)</span>
-                <span class="method-start">11712 ms</span>
+                <span class="method-start">14214 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">FailedScreenshot([TestResult name=IntroPg status=SUCCESS method=TC_SoleTrader.IntroPg(java.lang.String, java.lang.Str...)</span>
-                <span class="method-start">24242 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">BD(St Andrew Limited, 123456789, test.test@test.com, 07111234111, 30, Neilarmstrong Street, Los Angeles...)</span>
-                <span class="method-start">26591 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">FailedScreenshot([TestResult name=BD status=SUCCESS method=TC_SoleTrader.BD(java.lang.String, java.lang.String, java....)</span>
-                <span class="method-start">31557 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-test after">
-                <span class="method-name">Teardown</span>
-                <span class="method-start">31564 ms</span>
-              </div> <!-- configuration-test after -->
-              <div class="configuration-test before">
-                <span class="method-name">Setup(firefox)</span>
-                <span class="method-start">34157 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">IntroPg(Important Information, This is stage 1 of 5. Please do not use your browser's 'back' button to move ...)</span>
-                <span class="method-start">48400 ms</span>
+                <span class="method-start">14976 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">FailedScreenshot([TestResult name=IntroPg status=SUCCESS method=TC_SoleTrader.IntroPg(java.lang.String, java.lang.Str...)</span>
-                <span class="method-start">55835 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">BD(St Andrew Limited, 123456789, test.test@test.com, 07111234111, 30, Neilarmstrong Street, Los Angeles...)</span>
-                <span class="method-start">58723 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">FailedScreenshot([TestResult name=BD status=SUCCESS method=TC_SoleTrader.BD(java.lang.String, java.lang.String, java....)</span>
-                <span class="method-start">60900 ms</span>
+                <span class="method-start">25386 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">Teardown</span>
-                <span class="method-start">60901 ms</span>
+                <span class="method-start">25390 ms</span>
               </div> <!-- configuration-test after -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">FailedScreenshot([TestResult name=IntroPg status=FAILURE method=TC_SoleTrader.IntroPg(java.lang.String, java.lang.Str...)</span>
+                <span class="method-start">26266 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

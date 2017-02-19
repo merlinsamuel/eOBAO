@@ -5,6 +5,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.WebDriver;
 
 import factory.DataProviderFactory;
 
@@ -13,7 +14,7 @@ public class ExcelDataProvider
 	XSSFWorkbook wb;
 	
 	
-	public ExcelDataProvider()
+	public ExcelDataProvider(WebDriver driver)
 	{
 		File src = new File(DataProviderFactory.getconfig().getTestDataPath());
 		
