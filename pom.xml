@@ -73,7 +73,8 @@
   			<version>2.19.1</version>
   			<configuration>
   			<suiteXmlFiles>
-  			<suiteXmlFile>SoleTrader_E2E.xml</suiteXmlFile>
+  			<suiteXmlFile>SoleTrader.xml</suiteXmlFile>
+  			<suiteXmlFile>SoleTrader_DataProvider.xml</suiteXmlFile>
   			</suiteXmlFiles>
   			</configuration>
   		</plugin>

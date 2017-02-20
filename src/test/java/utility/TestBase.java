@@ -85,7 +85,7 @@ public class TestBase
 	//Explicit Wait until a WebElement is displayed in a page
 	public WebElement EmplicitWait(String elementid)
 	{
-		WebDriverWait wait = new WebDriverWait(driver, 10);
+		WebDriverWait wait = new WebDriverWait(BrowserFactory.driver, 10);
 		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(elementid)));
 		return element;
 	}

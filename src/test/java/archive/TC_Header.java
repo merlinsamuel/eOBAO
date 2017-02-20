@@ -52,7 +52,7 @@ public class TC_Header extends TestBase
 		
 		System.out.println(BrowserFactory.driver.getWindowHandle());
 		
-		TestBase.EOPScreenshot("Header");
+		
 		
 		test.log(LogStatus.PASS, "TC_Header script Passed");
 		

@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" allow-return-values="true">
+<suite name="Failed suite [Suite]">
   <parameter name="testcaseid" value="TC001"/>
-  <test name="Test01(failed)">
+  <parameter name="browser" value="firefox"/>
+  <test name="Test_TC001(failed)">
     <parameter name="testcaseid" value="TC001"/>
+    <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="test.SampleTestNG">
+      <class name="testscripts.SoleTrader">
         <methods>
-          <include name="TC001"/>
+          <include name="Setup"/>
+          <include name="FailedScreenshot"/>
+          <include name="BD"/>
+          <include name="Teardown"/>
         </methods>
-      </class> <!-- test.SampleTestNG -->
+      </class> <!-- testscripts.SoleTrader -->
     </classes>
-  </test> <!-- Test01(failed) -->
+  </test> <!-- Test_TC001(failed) -->
 </suite> <!-- Failed suite [Suite] -->

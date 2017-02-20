@@ -1,18 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [ST]" parallel="tests">
+<suite name="Failed suite [ST]">
   <parameter name="browser" value="firefox"/>
-  <test name="E2E ff(failed)" parallel="tests">
+  <test name="E2E chrome(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="testscripts.TC_SoleTrader">
+        <methods>
+          <include name="Setup"/>
+          <include name="Setup"/>
+          <include name="BD"/>
+        </methods>
+      </class> <!-- testscripts.TC_SoleTrader -->
+    </classes>
+  </test> <!-- E2E chrome(failed) -->
+  <test name="E2E ff(failed)">
     <parameter name="browser" value="firefox"/>
     <classes>
       <class name="testscripts.TC_SoleTrader">
         <methods>
-          <include name="IntroPg" invocation-numbers="0"/>
           <include name="Setup"/>
-          <include name="FailedScreenshot"/>
           <include name="Setup"/>
-          <include name="FailedScreenshot"/>
-          <include name="Teardown"/>
+          <include name="BD"/>
         </methods>
       </class> <!-- testscripts.TC_SoleTrader -->
     </classes>

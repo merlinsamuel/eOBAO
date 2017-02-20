@@ -49,8 +49,6 @@ public class TC_BusinessDetails extends TestBase
 		
 		TestBase.DropDownSelection(bd.Dropdown_stat_cor_add, Dropdown_stat_cor_add);
 		
-		TestBase.EOPScreenshot(BrowserFactory.driver.getTitle());
-		
 		test.log(LogStatus.INFO, "Business Details data input - Success");
 	}
 }
