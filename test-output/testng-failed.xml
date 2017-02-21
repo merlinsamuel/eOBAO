@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <parameter name="testcaseid" value="TC002"/>
+  <parameter name="browser" value="Firefox"/>
+  <test name="Test_TC001(failed)">
+    <parameter name="testcaseid" value="TC001"/>
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="testscripts.SoleTrader">
+        <methods>
+          <include name="IntroPg" invocation-numbers="0"/>
+          <include name="Setup"/>
+          <include name="FailedScreenshot"/>
+          <include name="Setup"/>
+          <include name="FailedScreenshot"/>
+          <include name="BD"/>
+          <include name="Teardown"/>
+        </methods>
+      </class> <!-- testscripts.SoleTrader -->
+    </classes>
+  </test> <!-- Test_TC001(failed) -->
+</suite> <!-- Failed suite [Suite] -->

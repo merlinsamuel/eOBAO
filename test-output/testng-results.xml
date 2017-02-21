@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="42582" started-at="2017-02-21T04:08:46Z" finished-at="2017-02-21T04:09:29Z">
+    <groups>
+    </groups>
+    <test name="Test ch" duration-ms="17778" started-at="2017-02-21T04:08:46Z" finished-at="2017-02-21T04:09:04Z">
+      <class name="testscripts.Redbus">
+        <test-method status="PASS" signature="Setup(java.lang.String)[pri:0, instance:testscripts.Redbus@4883b407]" name="Setup" is-config="true" duration-ms="7520" started-at="2017-02-20T20:08:46Z" finished-at="2017-02-20T20:08:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="busTicketSearch(java.lang.String)[pri:0, instance:testscripts.Redbus@4883b407]" name="busTicketSearch" duration-ms="7583" started-at="2017-02-20T20:08:54Z" finished-at="2017-02-20T20:09:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- busTicketSearch -->
+        <test-method status="PASS" signature="FailedScreenshot(org.testng.ITestResult)[pri:0, instance:testscripts.Redbus@4883b407]" name="FailedScreenshot" is-config="true" duration-ms="1" started-at="2017-02-20T20:09:01Z" finished-at="2017-02-20T20:09:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=busTicketSearch status=SUCCESS method=Redbus.busTicketSearch(java.lang.String)[pri:0, instance:testscripts.Redbus@4883b407] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FailedScreenshot -->
+        <test-method status="PASS" signature="Teardown()[pri:0, instance:testscripts.Redbus@4883b407]" name="Teardown" is-config="true" duration-ms="2628" started-at="2017-02-20T20:09:01Z" finished-at="2017-02-20T20:09:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+      </class> <!-- testscripts.Redbus -->
+    </test> <!-- Test ch -->
+    <test name="Test ff" duration-ms="15596" started-at="2017-02-21T04:09:04Z" finished-at="2017-02-21T04:09:20Z">
+      <class name="testscripts.Redbus">
+        <test-method status="PASS" signature="Setup(java.lang.String)[pri:0, instance:testscripts.Redbus@1ce92674]" name="Setup" is-config="true" duration-ms="9485" started-at="2017-02-20T20:09:04Z" finished-at="2017-02-20T20:09:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="busTicketSearch(java.lang.String)[pri:0, instance:testscripts.Redbus@1ce92674]" name="busTicketSearch" duration-ms="4759" started-at="2017-02-20T20:09:14Z" finished-at="2017-02-20T20:09:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- busTicketSearch -->
+        <test-method status="PASS" signature="FailedScreenshot(org.testng.ITestResult)[pri:0, instance:testscripts.Redbus@1ce92674]" name="FailedScreenshot" is-config="true" duration-ms="1" started-at="2017-02-20T20:09:18Z" finished-at="2017-02-20T20:09:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=busTicketSearch status=SUCCESS method=Redbus.busTicketSearch(java.lang.String)[pri:0, instance:testscripts.Redbus@1ce92674] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FailedScreenshot -->
+        <test-method status="PASS" signature="Teardown()[pri:0, instance:testscripts.Redbus@1ce92674]" name="Teardown" is-config="true" duration-ms="1340" started-at="2017-02-20T20:09:18Z" finished-at="2017-02-20T20:09:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+      </class> <!-- testscripts.Redbus -->
+    </test> <!-- Test ff -->
+    <test name="Test ie" duration-ms="9052" started-at="2017-02-21T04:09:20Z" finished-at="2017-02-21T04:09:29Z">
+      <class name="testscripts.Redbus">
+        <test-method status="PASS" signature="Setup(java.lang.String)[pri:0, instance:testscripts.Redbus@3f49dace]" name="Setup" is-config="true" duration-ms="3438" started-at="2017-02-20T20:09:20Z" finished-at="2017-02-20T20:09:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[IE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="busTicketSearch(java.lang.String)[pri:0, instance:testscripts.Redbus@3f49dace]" name="busTicketSearch" duration-ms="4493" started-at="2017-02-20T20:09:23Z" finished-at="2017-02-20T20:09:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[IE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- busTicketSearch -->
+        <test-method status="PASS" signature="FailedScreenshot(org.testng.ITestResult)[pri:0, instance:testscripts.Redbus@3f49dace]" name="FailedScreenshot" is-config="true" duration-ms="1" started-at="2017-02-20T20:09:28Z" finished-at="2017-02-20T20:09:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=busTicketSearch status=SUCCESS method=Redbus.busTicketSearch(java.lang.String)[pri:0, instance:testscripts.Redbus@3f49dace] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FailedScreenshot -->
+        <test-method status="PASS" signature="Teardown()[pri:0, instance:testscripts.Redbus@3f49dace]" name="Teardown" is-config="true" duration-ms="1112" started-at="2017-02-20T20:09:28Z" finished-at="2017-02-20T20:09:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+      </class> <!-- testscripts.Redbus -->
+    </test> <!-- Test ie -->
+  </suite> <!-- Suite -->
+</testng-results>

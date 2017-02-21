@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><th colspan="7">Suite</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Test_TC001</td><td class="numi">2</td><td class="numi">2</td><td class="numi">0</td><td class="numi">0</td><td class="numi">29.6 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">Test_TC002</td><td class="numi">2</td><td class="numi">2</td><td class="numi">0</td><td class="numi">0</td><td class="numi">26.8 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><th colspan="7">ST</th></tr>
+<tr><td style="text-align:left;padding-right:2em">E2E chrome</td><td class="numi">2</td><td class="numi">2</td><td class="numi">0</td><td class="numi">0</td><td class="numi">25.8 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">E2E ff</td><td class="numi">2</td><td class="numi">2</td><td class="numi">0</td><td class="numi">0</td><td class="numi">25.7 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="total"><td>Total</td>
+<td class="numi">8</td><td class="numi">8</td><td class="numi">0</td><td class="numi">0</td><td class="numi">108.2 seconds</td><td colspan="2">&nbsp;</td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Suite</th></tr>
+<tr><th colspan="4">Test_TC001 &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="2">testscripts.SoleTrader</td><td><a href="#m1"><b>BD</b>  </a></td><td class="numi">1</td><td>1487650020956</td><td class="numi">6004</td></tr><tr class="passedodd"><td><a href="#m2"><b>IntroPg</b>  </a></td><td class="numi">1</td><td>1487650005675</td><td class="numi">15274</td></tr>
+<tr><th colspan="4">Test_TC002 &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="2">testscripts.SoleTrader</td><td><a href="#m3"><b>BD</b>  </a></td><td class="numi">1</td><td>1487650049358</td><td class="numi">5850</td></tr><tr class="passedodd"><td><a href="#m4"><b>IntroPg</b>  </a></td><td class="numi">1</td><td>1487650039725</td><td class="numi">9632</td></tr>
+<tr><th colspan="4">ST</th></tr>
+<tr><th colspan="4">E2E chrome &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="2">testscripts.SoleTrader_DataProvider</td><td><a href="#m5"><b>BD</b>  </a></td><td class="numi">1</td><td>1487650076360</td><td class="numi">4468</td></tr><tr class="passedodd"><td><a href="#m6"><b>IntroPg</b>  </a></td><td class="numi">1</td><td>1487650062562</td><td class="numi">11760</td></tr>
+<tr><th colspan="4">E2E ff &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="2">testscripts.SoleTrader_DataProvider</td><td><a href="#m7"><b>BD</b>  </a></td><td class="numi">1</td><td>1487650103772</td><td class="numi">2955</td></tr><tr class="passedodd"><td><a href="#m8"><b>IntroPg</b>  </a></td><td class="numi">1</td><td>1487650093884</td><td class="numi">7898</td></tr>
+</table>
+<h1>Test_TC001</h1>
+<h2 id="m1">testscripts.SoleTrader:IntroPg</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>TC001</td>
+<td>Chrome</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">testscripts.SoleTrader:BD</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Test_TC002</h1>
+<h2 id="m3">testscripts.SoleTrader:BD</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">testscripts.SoleTrader:IntroPg</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>TC002</td>
+<td>Firefox</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>E2E chrome</h1>
+<h2 id="m5">testscripts.SoleTrader_DataProvider:BD</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th></tr>
+<tr class="param stripe"><td>St Andrew Limited</td>
+<td>123456789</td>
+<td>test.test@test.com</td>
+<td>07111234111</td>
+<td>30</td>
+<td>Neilarmstrong Street</td>
+<td>Los Angeles</td>
+<td>Montebello</td>
+<td>E126SE</td>
+<td>Andrews</td>
+<td>Trading Address</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">testscripts.SoleTrader_DataProvider:IntroPg</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th></tr>
+<tr class="param stripe"><td>Important Information</td>
+<td>This is stage 1 of 5. Please do not use your browser&apos;s &apos;back&apos; button to move back or you may lose some of the information you have already entered.</td>
+<td>Thank you for choosing a RBS Business Account.</td>
+<td>Please read the information below before proceeding to apply</td>
+<td>It will take you approx. 20 minutes to fill this application out.</td>
+<td>The following application is for New Business Banking Customers only - if you wish to open a new account for an existing Business Account please contact - call DIRECT BANKING FOR BUSINESS 0345 6002230.</td>
+<td>We will ask you for information about yourself and your business therefore please have this to hand as you are unable to save part way through. Personal information required, Name, Address &amp; Date of entry, Previous Address if less than 3 years. Date of Birth &amp; Country of Birth, years of experience in this role and any countries you are registered for tax purposes.</td>
+<td>Please ensure you complete accurately as incorrect information may delay your application.</td>
+<td>You will receive a phone call/email from one of our Business Specialists in order to confirm the information submitted and ensure we fully understand what your business is about and how we can support.</td>
+<td>We will then post or email your documents for signing. If we require ID you will need to visit one of our branches.</td>
+<td>Once we receive your signed application, assuming all is ok, we will open the account and advise you of your account number.</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>E2E ff</h1>
+<h2 id="m7">testscripts.SoleTrader_DataProvider:IntroPg</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th></tr>
+<tr class="param stripe"><td>Important Information</td>
+<td>This is stage 1 of 5. Please do not use your browser&apos;s &apos;back&apos; button to move back or you may lose some of the information you have already entered.</td>
+<td>Thank you for choosing a RBS Business Account.</td>
+<td>Please read the information below before proceeding to apply</td>
+<td>It will take you approx. 20 minutes to fill this application out.</td>
+<td>The following application is for New Business Banking Customers only - if you wish to open a new account for an existing Business Account please contact - call DIRECT BANKING FOR BUSINESS 0345 6002230.</td>
+<td>We will ask you for information about yourself and your business therefore please have this to hand as you are unable to save part way through. Personal information required, Name, Address &amp; Date of entry, Previous Address if less than 3 years. Date of Birth &amp; Country of Birth, years of experience in this role and any countries you are registered for tax purposes.</td>
+<td>Please ensure you complete accurately as incorrect information may delay your application.</td>
+<td>You will receive a phone call/email from one of our Business Specialists in order to confirm the information submitted and ensure we fully understand what your business is about and how we can support.</td>
+<td>We will then post or email your documents for signing. If we require ID you will need to visit one of our branches.</td>
+<td>Once we receive your signed application, assuming all is ok, we will open the account and advise you of your account number.</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">testscripts.SoleTrader_DataProvider:BD</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th></tr>
+<tr class="param stripe"><td>St Andrew Limited</td>
+<td>123456789</td>
+<td>test.test@test.com</td>
+<td>07111234111</td>
+<td>30</td>
+<td>Neilarmstrong Street</td>
+<td>Los Angeles</td>
+<td>Montebello</td>
+<td>E126SE</td>
+<td>Andrews</td>
+<td>Trading Address</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>
