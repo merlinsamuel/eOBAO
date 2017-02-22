@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="testcaseid" value="TC002"/>
+  <parameter name="browser" value="IE"/>
+  <test name="Test 01(failed)" parallel="tests">
+    <parameter name="testcaseid" value="TC002"/>
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="testscripts.SoleTrader">
+        <methods>
+          <include name="IntroPg" invocation-numbers="0"/>
+          <include name="FailedScreenshot"/>
+          <include name="Setup"/>
+          <include name="BD"/>
+        </methods>
+      </class> <!-- testscripts.SoleTrader -->
+      <class name="testscripts.Redbus">
+        <methods>
+          <include name="FailedScreenshot"/>
+          <include name="Setup"/>
+          <include name="Teardown"/>
+        </methods>
+      </class> <!-- testscripts.Redbus -->
+      <class name="testscripts.SoleTraderDP">
+        <methods>
+          <include name="FailedScreenshot"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- testscripts.SoleTraderDP -->
+    </classes>
+  </test> <!-- Test 01(failed) -->
+  <test name="Test 02(failed)" parallel="tests">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="testscripts.SoleTrader">
+        <methods>
+          <include name="FailedScreenshot"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- testscripts.SoleTrader -->
+      <class name="testscripts.Redbus">
+        <methods>
+          <include name="FailedScreenshot"/>
+          <include name="Setup"/>
+          <include name="Teardown"/>
+        </methods>
+      </class> <!-- testscripts.Redbus -->
+      <class name="testscripts.SoleTraderDP">
+        <methods>
+          <include name="FailedScreenshot"/>
+          <include name="Setup"/>
+          <include name="IntroPg" invocation-numbers="0"/>
+          <include name="BD"/>
+        </methods>
+      </class> <!-- testscripts.SoleTraderDP -->
+    </classes>
+  </test> <!-- Test 02(failed) -->
+  <test name="Test 03(failed)" parallel="tests">
+    <parameter name="browser" value="IE"/>
+    <classes>
+      <class name="testscripts.SoleTrader">
+        <methods>
+          <include name="FailedScreenshot"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- testscripts.SoleTrader -->
+      <class name="testscripts.Redbus">
+        <methods>
+          <include name="busTicketSearch" invocation-numbers="0"/>
+          <include name="FailedScreenshot"/>
+          <include name="Setup"/>
+          <include name="Teardown"/>
+        </methods>
+      </class> <!-- testscripts.Redbus -->
+      <class name="testscripts.SoleTraderDP">
+        <methods>
+          <include name="FailedScreenshot"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- testscripts.SoleTraderDP -->
+    </classes>
+  </test> <!-- Test 03(failed) -->
+</suite> <!-- Failed suite [Suite] -->
