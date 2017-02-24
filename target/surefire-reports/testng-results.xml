@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="66056" started-at="2017-02-22T09:37:38Z" finished-at="2017-02-22T09:38:44Z">
+  <suite name="Suite" duration-ms="84562" started-at="2017-02-24T04:11:20Z" finished-at="2017-02-24T04:12:45Z">
     <groups>
     </groups>
-    <test name="Test 01" duration-ms="30908" started-at="2017-02-22T09:37:38Z" finished-at="2017-02-22T09:38:09Z">
+    <test name="Test 01" duration-ms="84562" started-at="2017-02-24T04:11:20Z" finished-at="2017-02-24T04:12:45Z">
       <class name="testscripts.SoleTrader">
-        <test-method status="PASS" signature="Setup(java.lang.String)[pri:0, instance:testscripts.SoleTrader@6fb554cc]" name="Setup" is-config="true" duration-ms="6976" started-at="2017-02-22T01:37:38Z" finished-at="2017-02-22T01:37:45Z">
+        <test-method status="PASS" signature="Setup(java.lang.String)[pri:0, instance:testscripts.SoleTrader@5a61f5df]" name="Setup" is-config="true" duration-ms="7436" started-at="2017-02-23T20:11:20Z" finished-at="2017-02-23T20:11:28Z">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="IntroPg(java.lang.String, java.lang.String)[pri:0, instance:testscripts.SoleTrader@6fb554cc]" name="IntroPg" duration-ms="15548" started-at="2017-02-22T01:37:45Z" finished-at="2017-02-22T01:38:00Z">
+        <test-method status="PASS" signature="IntroPg(java.lang.String, java.lang.String)[pri:0, instance:testscripts.SoleTrader@5a61f5df]" name="IntroPg" duration-ms="17200" started-at="2017-02-23T20:11:28Z" finished-at="2017-02-23T20:11:45Z">
           <params>
             <param index="0">
               <value>
@@ -34,52 +34,89 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- IntroPg -->
-        <test-method status="PASS" signature="FailedScreenshot(org.testng.ITestResult)[pri:0, instance:testscripts.SoleTrader@6fb554cc]" name="FailedScreenshot" is-config="true" duration-ms="1" started-at="2017-02-22T01:38:00Z" finished-at="2017-02-22T01:38:00Z">
+        <test-method status="PASS" signature="FailedScreenshot(org.testng.ITestResult)[pri:0, instance:testscripts.SoleTrader@5a61f5df]" name="FailedScreenshot" is-config="true" duration-ms="1" started-at="2017-02-23T20:11:45Z" finished-at="2017-02-23T20:11:45Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=IntroPg status=SUCCESS method=SoleTrader.IntroPg(java.lang.String, java.lang.String)[pri:0, instance:testscripts.SoleTrader@6fb554cc] output={null}]]]>
+                <![CDATA[[TestResult name=IntroPg status=SUCCESS method=SoleTrader.IntroPg(java.lang.String, java.lang.String)[pri:0, instance:testscripts.SoleTrader@5a61f5df] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FailedScreenshot -->
-        <test-method status="PASS" signature="BD()[pri:0, instance:testscripts.SoleTrader@6fb554cc]" name="BD" duration-ms="5877" started-at="2017-02-22T01:38:00Z" finished-at="2017-02-22T01:38:06Z">
+        <test-method status="PASS" signature="BD()[pri:0, instance:testscripts.SoleTrader@5a61f5df]" name="BD" duration-ms="14108" started-at="2017-02-23T20:11:45Z" finished-at="2017-02-23T20:11:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BD -->
-        <test-method status="PASS" signature="FailedScreenshot(org.testng.ITestResult)[pri:0, instance:testscripts.SoleTrader@6fb554cc]" name="FailedScreenshot" is-config="true" duration-ms="0" started-at="2017-02-22T01:38:06Z" finished-at="2017-02-22T01:38:06Z">
+        <test-method status="PASS" signature="FailedScreenshot(org.testng.ITestResult)[pri:0, instance:testscripts.SoleTrader@5a61f5df]" name="FailedScreenshot" is-config="true" duration-ms="0" started-at="2017-02-23T20:11:59Z" finished-at="2017-02-23T20:11:59Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=BD status=SUCCESS method=SoleTrader.BD()[pri:0, instance:testscripts.SoleTrader@6fb554cc] output={null}]]]>
+                <![CDATA[[TestResult name=BD status=SUCCESS method=SoleTrader.BD()[pri:0, instance:testscripts.SoleTrader@5a61f5df] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FailedScreenshot -->
-        <test-method status="PASS" signature="Teardown()[pri:0, instance:testscripts.SoleTrader@6fb554cc]" name="Teardown" is-config="true" duration-ms="2463" started-at="2017-02-22T01:38:06Z" finished-at="2017-02-22T01:38:09Z">
+        <test-method status="PASS" signature="Teardown()[pri:0, instance:testscripts.SoleTrader@5a61f5df]" name="Teardown" is-config="true" duration-ms="3056" started-at="2017-02-23T20:11:59Z" finished-at="2017-02-23T20:12:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Teardown -->
       </class> <!-- testscripts.SoleTrader -->
-    </test> <!-- Test 01 -->
-    <test name="Test 02" duration-ms="26840" started-at="2017-02-22T09:38:09Z" finished-at="2017-02-22T09:38:36Z">
-      <class name="testscripts.SoleTraderDP">
-        <test-method status="PASS" signature="Setup(java.lang.String)[pri:0, instance:testscripts.SoleTraderDP@2cb4c3ab]" name="Setup" is-config="true" duration-ms="9824" started-at="2017-02-22T01:38:09Z" finished-at="2017-02-22T01:38:19Z">
+      <class name="testscripts.Redbus">
+        <test-method status="PASS" signature="Setup(java.lang.String)[pri:0, instance:testscripts.Redbus@6615435c]" name="Setup" is-config="true" duration-ms="4566" started-at="2017-02-23T20:12:02Z" finished-at="2017-02-23T20:12:07Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Firefox]]>
+                <![CDATA[Chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="IntroPg(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testscripts.SoleTraderDP@2cb4c3ab]" name="IntroPg" duration-ms="8267" started-at="2017-02-22T01:38:21Z" data-provider="IntroPg" finished-at="2017-02-22T01:38:29Z">
+        <test-method status="PASS" signature="busTicketSearch(java.lang.String)[pri:0, instance:testscripts.Redbus@6615435c]" name="busTicketSearch" duration-ms="8634" started-at="2017-02-23T20:12:07Z" finished-at="2017-02-23T20:12:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- busTicketSearch -->
+        <test-method status="PASS" signature="FailedScreenshot(org.testng.ITestResult)[pri:0, instance:testscripts.Redbus@6615435c]" name="FailedScreenshot" is-config="true" duration-ms="1" started-at="2017-02-23T20:12:15Z" finished-at="2017-02-23T20:12:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=busTicketSearch status=SUCCESS method=Redbus.busTicketSearch(java.lang.String)[pri:0, instance:testscripts.Redbus@6615435c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FailedScreenshot -->
+        <test-method status="PASS" signature="Teardown()[pri:0, instance:testscripts.Redbus@6615435c]" name="Teardown" is-config="true" duration-ms="1763" started-at="2017-02-23T20:12:15Z" finished-at="2017-02-23T20:12:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+      </class> <!-- testscripts.Redbus -->
+      <class name="testscripts.SoleTraderDP">
+        <test-method status="PASS" signature="Setup(java.lang.String)[pri:0, instance:testscripts.SoleTraderDP@3551a94]" name="Setup" is-config="true" duration-ms="3915" started-at="2017-02-23T20:12:17Z" finished-at="2017-02-23T20:12:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="IntroPg(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testscripts.SoleTraderDP@3551a94]" name="IntroPg" duration-ms="14128" started-at="2017-02-23T20:12:22Z" data-provider="IntroPg" finished-at="2017-02-23T20:12:36Z">
           <params>
             <param index="0">
               <value>
@@ -140,18 +177,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- IntroPg -->
-        <test-method status="PASS" signature="FailedScreenshot(org.testng.ITestResult)[pri:0, instance:testscripts.SoleTraderDP@2cb4c3ab]" name="FailedScreenshot" is-config="true" duration-ms="1" started-at="2017-02-22T01:38:29Z" finished-at="2017-02-22T01:38:29Z">
+        <test-method status="PASS" signature="FailedScreenshot(org.testng.ITestResult)[pri:0, instance:testscripts.SoleTraderDP@3551a94]" name="FailedScreenshot" is-config="true" duration-ms="1" started-at="2017-02-23T20:12:36Z" finished-at="2017-02-23T20:12:36Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=IntroPg status=SUCCESS method=SoleTraderDP.IntroPg(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testscripts.SoleTraderDP@2cb4c3ab] output={null}]]]>
+                <![CDATA[[TestResult name=IntroPg status=SUCCESS method=SoleTraderDP.IntroPg(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testscripts.SoleTraderDP@3551a94] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FailedScreenshot -->
-        <test-method status="PASS" signature="BD(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testscripts.SoleTraderDP@2cb4c3ab]" name="BD" duration-ms="2425" started-at="2017-02-22T01:38:32Z" data-provider="BusinessDetailsPg" finished-at="2017-02-22T01:38:34Z">
+        <test-method status="PASS" signature="BD(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testscripts.SoleTraderDP@3551a94]" name="BD" duration-ms="5366" started-at="2017-02-23T20:12:38Z" data-provider="BusinessDetailsPg" finished-at="2017-02-23T20:12:43Z">
           <params>
             <param index="0">
               <value>
@@ -212,63 +249,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BD -->
-        <test-method status="PASS" signature="FailedScreenshot(org.testng.ITestResult)[pri:0, instance:testscripts.SoleTraderDP@2cb4c3ab]" name="FailedScreenshot" is-config="true" duration-ms="1" started-at="2017-02-22T01:38:34Z" finished-at="2017-02-22T01:38:34Z">
+        <test-method status="PASS" signature="FailedScreenshot(org.testng.ITestResult)[pri:0, instance:testscripts.SoleTraderDP@3551a94]" name="FailedScreenshot" is-config="true" duration-ms="1" started-at="2017-02-23T20:12:43Z" finished-at="2017-02-23T20:12:43Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=BD status=SUCCESS method=SoleTraderDP.BD(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testscripts.SoleTraderDP@2cb4c3ab] output={null}]]]>
+                <![CDATA[[TestResult name=BD status=SUCCESS method=SoleTraderDP.BD(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testscripts.SoleTraderDP@3551a94] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FailedScreenshot -->
-        <test-method status="PASS" signature="Teardown()[pri:0, instance:testscripts.SoleTraderDP@2cb4c3ab]" name="Teardown" is-config="true" duration-ms="1077" started-at="2017-02-22T01:38:34Z" finished-at="2017-02-22T01:38:36Z">
+        <test-method status="PASS" signature="Teardown()[pri:0, instance:testscripts.SoleTraderDP@3551a94]" name="Teardown" is-config="true" duration-ms="1745" started-at="2017-02-23T20:12:43Z" finished-at="2017-02-23T20:12:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Teardown -->
       </class> <!-- testscripts.SoleTraderDP -->
-    </test> <!-- Test 02 -->
-    <test name="Test 03" duration-ms="8120" started-at="2017-02-22T09:38:36Z" finished-at="2017-02-22T09:38:44Z">
-      <class name="testscripts.Redbus">
-        <test-method status="PASS" signature="Setup(java.lang.String)[pri:0, instance:testscripts.Redbus@39fb3ab6]" name="Setup" is-config="true" duration-ms="3322" started-at="2017-02-22T01:38:36Z" finished-at="2017-02-22T01:38:39Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[IE]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="busTicketSearch(java.lang.String)[pri:0, instance:testscripts.Redbus@39fb3ab6]" name="busTicketSearch" duration-ms="3846" started-at="2017-02-22T01:38:39Z" finished-at="2017-02-22T01:38:43Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[IE]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- busTicketSearch -->
-        <test-method status="PASS" signature="Teardown()[pri:0, instance:testscripts.Redbus@39fb3ab6]" name="Teardown" is-config="true" duration-ms="950" started-at="2017-02-22T01:38:43Z" finished-at="2017-02-22T01:38:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Teardown -->
-        <test-method status="PASS" signature="FailedScreenshot(org.testng.ITestResult)[pri:0, instance:testscripts.Redbus@39fb3ab6]" name="FailedScreenshot" is-config="true" duration-ms="0" started-at="2017-02-22T01:38:43Z" finished-at="2017-02-22T01:38:43Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=busTicketSearch status=SUCCESS method=Redbus.busTicketSearch(java.lang.String)[pri:0, instance:testscripts.Redbus@39fb3ab6] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- FailedScreenshot -->
-      </class> <!-- testscripts.Redbus -->
-    </test> <!-- Test 03 -->
+    </test> <!-- Test 01 -->
   </suite> <!-- Suite -->
 </testng-results>

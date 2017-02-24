@@ -7,22 +7,8 @@
   	<parameter name="testcaseid" value="TC002"></parameter>
     	<classes>
       		<class name="testscripts.SoleTrader"/>
-    	</classes>
-  </test> <!-- Test -->
-  
-  
-  <test name="Test 02">
-  	<parameter name="browser" value="Firefox"></parameter>
-  	   	<classes>
-      		<class name="testscripts.SoleTraderDP"/>
-    	</classes>
-  </test> <!-- Test -->
-  
-  
-  <test name="Test 03">
-  	<parameter name="browser" value="IE"></parameter>
-  	   	<classes>
       		<class name="testscripts.Redbus"/>
+      		<class name="testscripts.SoleTraderDP"/>
     	</classes>
   </test> <!-- Test -->
   

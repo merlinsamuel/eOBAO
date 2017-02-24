@@ -4,6 +4,8 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ExcelTestData
@@ -40,7 +42,9 @@ public class ExcelTestData
 	
 	public String getCelData(String sheetname, int row, int col)
 	{
-		String data = wb.getSheet(sheetname).getRow(row).getCell(col).getStringCellValue();
+		Cell cellvalue = wb.getSheet(sheetname).getRow(row).getCell(col);
+		DataFormatter formatter = new DataFormatter();
+		String data = formatter.formatCellValue(cellvalue);
 		return data;
 	}
 	
@@ -49,15 +53,12 @@ public class ExcelTestData
 		int row = ObjFactory.getexcel().getRowCount(sheetname);
 		int col = ObjFactory.getexcel().getColCount(sheetname);
 		
-		Object[][] data = new Object[row][col];
+		Object[] tc_id = new Object[row];
 				
 		//Get all test data from excel tab
-		for(int i=0; i<row; i++)
+		for(int i=1; i<row; i++)
 		{
-			for(int j=0; j<col; j++)
-			{
-				data[i][j] = ObjFactory.getexcel().getCelData(sheetname, i, j);
-			}
+			tc_id[i] = wb.getSheet(sheetname).getRow(i).getCell(0).getStringCellValue();
 		}
 		
 		
@@ -66,7 +67,7 @@ public class ExcelTestData
 		
 		for (int index=1; index<row; index++)
 		{
-			if (data[index][0].equals(testcaseid))
+			if (tc_id[index].equals(testcaseid))
 			{
 				for(int i=0; i<1; i++)
 				{

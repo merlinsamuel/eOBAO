@@ -66,5 +66,18 @@ public class Utility
 	{
 		Select dropdown = new Select(element);
 		dropdown.selectByVisibleText(dropdowntext);
+		Assert.assertEquals(dropdown.getFirstSelectedOption().getText(), dropdowntext);
+	}
+	
+	public void threadsleep()
+	{
+		try
+		{
+			Thread.sleep(500);
+		} 
+		catch (InterruptedException e)
+		{
+			System.out.println("Exception Occured while Thread sleep."+e);
+		}
 	}
 }

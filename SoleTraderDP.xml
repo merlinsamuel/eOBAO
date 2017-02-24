@@ -9,11 +9,11 @@
       </classes>
   </test>
   
-<test name="E2E ff">
+<!-- <test name="E2E ff">
   <parameter name="browser" value="Firefox"></parameter>
     <classes>
       <class name="testscripts.SoleTraderDP"/>
       </classes>
-  </test>
+  </test> -->
     
 </suite> <!-- ST -->

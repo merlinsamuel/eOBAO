@@ -13,6 +13,6 @@ public class TestDataProvider
 	@DataProvider(name = "BusinessDetailsPg")
 	public static Object[][] dpforBusinessDetailsPg()
 	{
-		return ObjFactory.getexcel().ReadExceldata("TC001", "BD_1");
+		return ObjFactory.getexcel().ReadExceldata("TC001", "SoleTraderDP");
 	}
 }

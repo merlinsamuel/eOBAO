@@ -4,18 +4,26 @@
 
   <test name="Test_TC001">
   <parameter name="browser" value="Chrome"></parameter>
-  <parameter name="testcaseid" value="TC001"></parameter>
+  <parameter name="testcaseid" value="TC003"></parameter>
     <classes>
       <class name="testscripts.SoleTrader"/>
     </classes>
   </test> <!-- Test -->
   
  <test name="Test_TC002">
-  <parameter name="browser" value="Firefox"></parameter>
+  <parameter name="browser" value="Chrome"></parameter>
   <parameter name="testcaseid" value="TC002"></parameter>
     <classes>
       <class name="testscripts.SoleTrader"/>
     </classes>
   </test>
+  
+<!--    <test name="Test_TC003">
+  <parameter name="browser" value="Firefox"></parameter>
+  <parameter name="testcaseid" value="TC003"></parameter>
+    <classes>
+      <class name="testscripts.SoleTrader"/>
+    </classes>
+  </test> -->
   
 </suite> <!-- Suite -->

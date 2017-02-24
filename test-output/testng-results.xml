@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="42276" started-at="2017-02-22T09:33:30Z" finished-at="2017-02-22T09:34:12Z">
+  <suite name="ST" duration-ms="33379" started-at="2017-02-24T04:02:30Z" finished-at="2017-02-24T04:03:03Z">
     <groups>
     </groups>
-    <test name="Test ch" duration-ms="17788" started-at="2017-02-22T09:33:30Z" finished-at="2017-02-22T09:33:48Z">
-      <class name="testscripts.Redbus">
-        <test-method status="PASS" signature="Setup(java.lang.String)[pri:0, instance:testscripts.Redbus@6093dd95]" name="Setup" is-config="true" duration-ms="7670" started-at="2017-02-22T01:33:30Z" finished-at="2017-02-22T01:33:38Z">
+    <test name="E2E chrome" duration-ms="33379" started-at="2017-02-24T04:02:30Z" finished-at="2017-02-24T04:03:03Z">
+      <class name="testscripts.SoleTraderDP">
+        <test-method status="PASS" signature="Setup(java.lang.String)[pri:0, instance:testscripts.SoleTraderDP@604ed9f0]" name="Setup" is-config="true" duration-ms="6715" started-at="2017-02-23T20:02:30Z" finished-at="2017-02-23T20:02:37Z">
           <params>
             <param index="0">
               <value>
@@ -18,115 +18,155 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="busTicketSearch(java.lang.String)[pri:0, instance:testscripts.Redbus@6093dd95]" name="busTicketSearch" duration-ms="6873" started-at="2017-02-22T01:33:38Z" finished-at="2017-02-22T01:33:45Z">
+        <test-method status="PASS" signature="IntroPg(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testscripts.SoleTraderDP@604ed9f0]" name="IntroPg" duration-ms="14120" started-at="2017-02-23T20:02:40Z" data-provider="IntroPg" finished-at="2017-02-23T20:02:54Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Chrome]]>
+                <![CDATA[Important Information]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[This is stage 1 of 5. Please do not use your browser's 'back' button to move back or you may lose some of the information you have already entered.]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Thank you for choosing a RBS Business Account.]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Please read the information below before proceeding to apply]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[It will take you approx. 20 minutes to fill this application out.]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[The following application is for New Business Banking Customers only - if you wish to open a new account for an existing Business Account please contact - call DIRECT BANKING FOR BUSINESS 0345 6002230.]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[We will ask you for information about yourself and your business therefore please have this to hand as you are unable to save part way through. Personal information required, Name, Address & Date of entry, Previous Address if less than 3 years. Date of Birth & Country of Birth, years of experience in this role and any countries you are registered for tax purposes.]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Please ensure you complete accurately as incorrect information may delay your application.]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[You will receive a phone call/email from one of our Business Specialists in order to confirm the information submitted and ensure we fully understand what your business is about and how we can support.]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[We will then post or email your documents for signing. If we require ID you will need to visit one of our branches.]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Once we receive your signed application, assuming all is ok, we will open the account and advise you of your account number.]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- busTicketSearch -->
-        <test-method status="PASS" signature="FailedScreenshot(org.testng.ITestResult)[pri:0, instance:testscripts.Redbus@6093dd95]" name="FailedScreenshot" is-config="true" duration-ms="2" started-at="2017-02-22T01:33:45Z" finished-at="2017-02-22T01:33:45Z">
+        </test-method> <!-- IntroPg -->
+        <test-method status="PASS" signature="FailedScreenshot(org.testng.ITestResult)[pri:0, instance:testscripts.SoleTraderDP@604ed9f0]" name="FailedScreenshot" is-config="true" duration-ms="0" started-at="2017-02-23T20:02:54Z" finished-at="2017-02-23T20:02:54Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=busTicketSearch status=SUCCESS method=Redbus.busTicketSearch(java.lang.String)[pri:0, instance:testscripts.Redbus@6093dd95] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- FailedScreenshot -->
-        <test-method status="PASS" signature="Teardown()[pri:0, instance:testscripts.Redbus@6093dd95]" name="Teardown" is-config="true" duration-ms="3187" started-at="2017-02-22T01:33:45Z" finished-at="2017-02-22T01:33:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Teardown -->
-      </class> <!-- testscripts.Redbus -->
-    </test> <!-- Test ch -->
-    <test name="Test ff" duration-ms="16207" started-at="2017-02-22T09:33:48Z" finished-at="2017-02-22T09:34:04Z">
-      <class name="testscripts.Redbus">
-        <test-method status="PASS" signature="Setup(java.lang.String)[pri:0, instance:testscripts.Redbus@73ad2d6]" name="Setup" is-config="true" duration-ms="9490" started-at="2017-02-22T01:33:48Z" finished-at="2017-02-22T01:33:57Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="busTicketSearch(java.lang.String)[pri:0, instance:testscripts.Redbus@73ad2d6]" name="busTicketSearch" duration-ms="5168" started-at="2017-02-22T01:33:57Z" finished-at="2017-02-22T01:34:02Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- busTicketSearch -->
-        <test-method status="PASS" signature="FailedScreenshot(org.testng.ITestResult)[pri:0, instance:testscripts.Redbus@73ad2d6]" name="FailedScreenshot" is-config="true" duration-ms="0" started-at="2017-02-22T01:34:02Z" finished-at="2017-02-22T01:34:02Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=busTicketSearch status=SUCCESS method=Redbus.busTicketSearch(java.lang.String)[pri:0, instance:testscripts.Redbus@73ad2d6] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- FailedScreenshot -->
-        <test-method status="PASS" signature="Teardown()[pri:0, instance:testscripts.Redbus@73ad2d6]" name="Teardown" is-config="true" duration-ms="1539" started-at="2017-02-22T01:34:02Z" finished-at="2017-02-22T01:34:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Teardown -->
-      </class> <!-- testscripts.Redbus -->
-    </test> <!-- Test ff -->
-    <test name="Test ie" duration-ms="8144" started-at="2017-02-22T09:34:04Z" finished-at="2017-02-22T09:34:12Z">
-      <class name="testscripts.Redbus">
-        <test-method status="PASS" signature="Setup(java.lang.String)[pri:0, instance:testscripts.Redbus@5f2108b5]" name="Setup" is-config="true" duration-ms="3486" started-at="2017-02-22T01:34:04Z" finished-at="2017-02-22T01:34:08Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[IE]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="busTicketSearch(java.lang.String)[pri:0, instance:testscripts.Redbus@5f2108b5]" name="busTicketSearch" duration-ms="3553" started-at="2017-02-22T01:34:08Z" finished-at="2017-02-22T01:34:11Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[IE]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- busTicketSearch -->
-        <test-method status="PASS" signature="FailedScreenshot(org.testng.ITestResult)[pri:0, instance:testscripts.Redbus@5f2108b5]" name="FailedScreenshot" is-config="true" duration-ms="1" started-at="2017-02-22T01:34:11Z" finished-at="2017-02-22T01:34:11Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=busTicketSearch status=SUCCESS method=Redbus.busTicketSearch(java.lang.String)[pri:0, instance:testscripts.Redbus@5f2108b5] output={null}]]]>
+                <![CDATA[[TestResult name=IntroPg status=SUCCESS method=SoleTraderDP.IntroPg(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testscripts.SoleTraderDP@604ed9f0] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FailedScreenshot -->
-        <test-method status="PASS" signature="Teardown()[pri:0, instance:testscripts.Redbus@5f2108b5]" name="Teardown" is-config="true" duration-ms="1097" started-at="2017-02-22T01:34:11Z" finished-at="2017-02-22T01:34:12Z">
+        <test-method status="PASS" signature="BD(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testscripts.SoleTraderDP@604ed9f0]" name="BD" duration-ms="4982" started-at="2017-02-23T20:02:56Z" data-provider="BusinessDetailsPg" finished-at="2017-02-23T20:03:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[St Andrew Limited]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456789]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[test.test@test.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[07111234111]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[30]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Neilarmstrong Street]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Los Angeles]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Montebello]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[E126SE]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Andrews]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Trading Address]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BD -->
+        <test-method status="PASS" signature="FailedScreenshot(org.testng.ITestResult)[pri:0, instance:testscripts.SoleTraderDP@604ed9f0]" name="FailedScreenshot" is-config="true" duration-ms="0" started-at="2017-02-23T20:03:01Z" finished-at="2017-02-23T20:03:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=BD status=SUCCESS method=SoleTraderDP.BD(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testscripts.SoleTraderDP@604ed9f0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FailedScreenshot -->
+        <test-method status="PASS" signature="Teardown()[pri:0, instance:testscripts.SoleTraderDP@604ed9f0]" name="Teardown" is-config="true" duration-ms="2564" started-at="2017-02-23T20:03:01Z" finished-at="2017-02-23T20:03:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Teardown -->
-      </class> <!-- testscripts.Redbus -->
-    </test> <!-- Test ie -->
-  </suite> <!-- Suite -->
+      </class> <!-- testscripts.SoleTraderDP -->
+    </test> <!-- E2E chrome -->
+  </suite> <!-- ST -->
 </testng-results>

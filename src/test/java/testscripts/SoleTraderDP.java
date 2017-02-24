@@ -70,11 +70,11 @@ public class SoleTraderDP extends TestBase
 		ObjFactory.getutil().InputText(bd.Txt_BusiTelephoneNumber, Txt_BusiTelephoneNumber);
 		ObjFactory.getutil().InputText(bd.Txt_BusiEmail, Txt_BusiEmail);
 		ObjFactory.getutil().InputText(bd.Txt_MobileNumber, Txt_MobileNumber);
-		ObjFactory.getutil().InputText(bd.Txt_BuildingNumber, Txt_BuildingNumber);
-		ObjFactory.getutil().InputText(bd.Txt_Street, Txt_Street);
-		ObjFactory.getutil().InputText(bd.Txt_Town, Txt_Town);
-		ObjFactory.getutil().InputText(bd.Txt_County, Txt_County);
-		ObjFactory.getutil().InputText(bd.Txt_PostCode, Txt_PostCode);
+		ObjFactory.getutil().InputText(bd.Txt_1BuildingNumber, Txt_BuildingNumber);
+		ObjFactory.getutil().InputText(bd.Txt_1Street, Txt_Street);
+		ObjFactory.getutil().InputText(bd.Txt_1Town, Txt_Town);
+		ObjFactory.getutil().InputText(bd.Txt_1County, Txt_County); 
+		ObjFactory.getutil().InputText(bd.Txt_1PostCode, Txt_PostCode);
 		ObjFactory.getutil().InputText(bd.Txt_TradingName, Txt_TradingName);
 		ObjFactory.getutil().ClickElement(bd.Radio_TradingName);
 		ObjFactory.getutil().DropDownSelection(bd.Dropdown_stat_cor_add, Dropdown_stat_cor_add);

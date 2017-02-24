@@ -7,9 +7,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.ITestResult;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 
 import com.relevantcodes.extentreports.ExtentReports;
@@ -24,7 +24,7 @@ public class TestBase
 	
 	//Browser Initialize
 	@Parameters("browser")
-	@BeforeTest
+	@BeforeClass
 	public void Setup(String browsername)
 	{
 		if (browsername.equalsIgnoreCase("Firefox"))
@@ -45,12 +45,12 @@ public class TestBase
 		
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-
+		
 		report = new ExtentReports(ObjFactory.getconfig().getReportsPath(), false);
 	}
 	
 	//Browser close and Test execution logging
-	@AfterTest
+	@AfterClass
 	public void Teardown()
 	{
 		driver.quit();

@@ -45,6 +45,7 @@ public class SoleTrader extends TestBase
 			{
 				index = i;
 				j=0;
+				break;
 			}
 		}
 		
@@ -84,20 +85,46 @@ public class SoleTrader extends TestBase
 		Assert.assertEquals(driver.getTitle(), bd.PAGE_TITLE);
 		test.log(LogStatus.INFO, "Header Images and Business Details PageTitle Verification - Success");
 		
-		ObjFactory.getutil().InputText(bd.Txt_BusiName, ObjFactory.getexcel().getCelData("BD_1", index, j+1));
-		ObjFactory.getutil().InputText(bd.Txt_BusiTelephoneNumber, ObjFactory.getexcel().getCelData("BD_1", index, j+2));
-		ObjFactory.getutil().InputText(bd.Txt_BusiEmail, ObjFactory.getexcel().getCelData("BD_1", index, j+3));
-		ObjFactory.getutil().InputText(bd.Txt_MobileNumber, ObjFactory.getexcel().getCelData("BD_1", index, j+4));
-		ObjFactory.getutil().InputText(bd.Txt_BuildingNumber, ObjFactory.getexcel().getCelData("BD_1", index, j+5));
-		ObjFactory.getutil().InputText(bd.Txt_Street, ObjFactory.getexcel().getCelData("BD_1", index, j+6));
-		ObjFactory.getutil().InputText(bd.Txt_Town, ObjFactory.getexcel().getCelData("BD_1", index, j+7));
-		ObjFactory.getutil().InputText(bd.Txt_County, ObjFactory.getexcel().getCelData("BD_1", index, j+8));
-		ObjFactory.getutil().InputText(bd.Txt_PostCode, ObjFactory.getexcel().getCelData("BD_1", index, j+9));
-		ObjFactory.getutil().InputText(bd.Txt_TradingName, ObjFactory.getexcel().getCelData("BD_1", index, j+10));
-		ObjFactory.getutil().ClickElement(bd.Radio_TradingName);
-		ObjFactory.getutil().DropDownSelection(bd.Dropdown_stat_cor_add, ObjFactory.getexcel().getCelData("BD_1", index, j+11));
+		ObjFactory.getutil().InputText(bd.Txt_BusiName, ObjFactory.getexcel().getCelData("sample", index, j+1));
+		ObjFactory.getutil().InputText(bd.Txt_BusiTelephoneNumber, ObjFactory.getexcel().getCelData("sample", index, j+2));
+		ObjFactory.getutil().InputText(bd.Txt_BusiEmail, ObjFactory.getexcel().getCelData("sample", index, j+3));
+		ObjFactory.getutil().InputText(bd.Txt_MobileNumber, ObjFactory.getexcel().getCelData("sample", index, j+4));
 		
+		ObjFactory.getutil().InputText(bd.Txt_1BuildingNumber, ObjFactory.getexcel().getCelData("sample", index, j+5));
+		ObjFactory.getutil().InputText(bd.Txt_1Street, ObjFactory.getexcel().getCelData("sample", index, j+6));
+		ObjFactory.getutil().InputText(bd.Txt_1Town, ObjFactory.getexcel().getCelData("sample", index, j+7));
+		ObjFactory.getutil().InputText(bd.Txt_1County, ObjFactory.getexcel().getCelData("sample", index, j+8));
+		ObjFactory.getutil().InputText(bd.Txt_1Country, ObjFactory.getexcel().getCelData("sample", index, j+9));
+		ObjFactory.getutil().InputText(bd.Txt_1PostCode, ObjFactory.getexcel().getCelData("sample", index, j+10));
+		
+		ObjFactory.getutil().InputText(bd.Txt_TradingName, ObjFactory.getexcel().getCelData("sample", index, j+11));
+		ObjFactory.getutil().InputText(bd.Txt_ContactName, ObjFactory.getexcel().getCelData("sample", index, j+12));
+		
+		ObjFactory.getutil().ClickElement(bd.Radio_TradingName);
+		
+		ObjFactory.getutil().InputText(bd.Txt_2BuildingNumber, ObjFactory.getexcel().getCelData("sample", index, j+14));
+		ObjFactory.getutil().InputText(bd.Txt_2Street, ObjFactory.getexcel().getCelData("sample", index, j+15));
+		ObjFactory.getutil().InputText(bd.Txt_2Town, ObjFactory.getexcel().getCelData("sample", index, j+16));
+		ObjFactory.getutil().InputText(bd.Txt_2County, ObjFactory.getexcel().getCelData("sample", index, j+17));
+		ObjFactory.getutil().InputText(bd.Txt_2Country, ObjFactory.getexcel().getCelData("sample", index, j+18));
+		ObjFactory.getutil().InputText(bd.Txt_2PostCode, ObjFactory.getexcel().getCelData("sample", index, j+19));
+		
+		//ObjFactory.getutil().threadsleep();
+		
+		ObjFactory.getutil().DropDownSelection(bd.Dropdown_stat_cor_add, ObjFactory.getexcel().getCelData("sample", index, j+20));
+		
+		ObjFactory.getutil().InputText(bd.Txt_3BuildingNumber, ObjFactory.getexcel().getCelData("sample", index, j+21));
+		ObjFactory.getutil().InputText(bd.Txt_3Street, ObjFactory.getexcel().getCelData("sample", index, j+22));
+		ObjFactory.getutil().InputText(bd.Txt_3Town, ObjFactory.getexcel().getCelData("sample", index, j+23));
+		ObjFactory.getutil().InputText(bd.Txt_3County, ObjFactory.getexcel().getCelData("sample", index, j+24));
+		ObjFactory.getutil().InputText(bd.Txt_3Country, ObjFactory.getexcel().getCelData("sample", index, j+25));
+		ObjFactory.getutil().InputText(bd.Txt_3PostCode, ObjFactory.getexcel().getCelData("sample", index, j+26));
+				
 		ObjFactory.getutil().EOPScreenshot(driver, driver.getTitle());
+		
+		ObjFactory.getutil().ClickElement(bd.Btn_Next);
+		
+		System.out.println(driver.getTitle());
 		
 		test.log(LogStatus.PASS, "Business Details data input - Success");
 	}
