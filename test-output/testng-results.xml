@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="30133" started-at="2017-02-25T10:32:21Z" finished-at="2017-02-25T10:32:51Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="30133" started-at="2017-02-25T10:32:21Z" finished-at="2017-02-25T10:32:51Z">
+      <class name="testscripts.FBLoginTC">
+        <test-method status="PASS" signature="Setup(java.lang.String)[pri:0, instance:testscripts.FBLoginTC@91161c7]" name="Setup" is-config="true" duration-ms="7061" started-at="2017-02-25T02:32:21Z" finished-at="2017-02-25T02:32:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="FBLogin(java.lang.String, java.lang.String)[pri:0, instance:testscripts.FBLoginTC@91161c7]" name="FBLogin" duration-ms="20476" started-at="2017-02-25T02:32:28Z" finished-at="2017-02-25T02:32:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC002]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FBLogin -->
+        <test-method status="PASS" signature="FailedScreenshot(org.testng.ITestResult)[pri:0, instance:testscripts.FBLoginTC@91161c7]" name="FailedScreenshot" is-config="true" duration-ms="2" started-at="2017-02-25T02:32:48Z" finished-at="2017-02-25T02:32:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=FBLogin status=SUCCESS method=FBLoginTC.FBLogin(java.lang.String, java.lang.String)[pri:0, instance:testscripts.FBLoginTC@91161c7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FailedScreenshot -->
+        <test-method status="PASS" signature="Teardown()[pri:0, instance:testscripts.FBLoginTC@91161c7]" name="Teardown" is-config="true" duration-ms="2552" started-at="2017-02-25T02:32:48Z" finished-at="2017-02-25T02:32:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+      </class> <!-- testscripts.FBLoginTC -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
