@@ -1,32 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]">
-  <parameter name="testcaseid" value="TC002"/>
+  <parameter name="testcaseid" value="TC001"/>
   <parameter name="browser" value="Chrome"/>
-  <test name="Test 01(failed)">
-    <parameter name="testcaseid" value="TC002"/>
+  <test name="Test(failed)">
+    <parameter name="testcaseid" value="TC001"/>
     <parameter name="browser" value="Chrome"/>
     <classes>
-      <class name="testscripts.SoleTraderDP">
+      <class name="testscripts.FBLoginTC">
         <methods>
-          <include name="Setup"/>
-          <include name="IntroPg"/>
-          <include name="BD"/>
-        </methods>
-      </class> <!-- testscripts.SoleTraderDP -->
-      <class name="testscripts.SoleTrader">
-        <methods>
-          <include name="IntroPg" invocation-numbers="0"/>
           <include name="FailedScreenshot"/>
           <include name="Setup"/>
-          <include name="BD"/>
+          <include name="FBLogin" invocation-numbers="0"/>
         </methods>
-      </class> <!-- testscripts.SoleTrader -->
-      <class name="testscripts.Redbus">
-        <methods>
-          <include name="busTicketSearch"/>
-        </methods>
-      </class> <!-- testscripts.Redbus -->
+      </class> <!-- testscripts.FBLoginTC -->
     </classes>
-  </test> <!-- Test 01(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

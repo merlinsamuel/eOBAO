@@ -1,9 +1,12 @@
 package library;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.ITestResult;
@@ -35,7 +38,15 @@ public class TestBase
 		else if (browsername.equalsIgnoreCase("Chrome"))
 		{
 			System.setProperty("webdriver.chrome.driver", ObjFactory.getconfig().getChromeDriverPath());
-			driver = new ChromeDriver();
+			ChromeOptions options = new ChromeOptions();
+			
+			Map<String, Object> map = new HashMap<String, Object>();
+			map.put("profile.default_content_setting_values.notifications", 2);
+						
+			options.addArguments("--disable-extensions");
+			options.setExperimentalOption("prefs", map);
+			
+			driver = new ChromeDriver(options);
 		}
 		else if (browsername.equalsIgnoreCase("IE"))
 		{

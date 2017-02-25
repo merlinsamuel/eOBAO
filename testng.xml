@@ -9,6 +9,7 @@
       		<class name="testscripts.SoleTrader"/>
       		<class name="testscripts.Redbus"/>
       		<class name="testscripts.SoleTraderDP"/>
+      		<class name="testscripts.FBLoginTC"/>
     	</classes>
   </test> <!-- Test -->
   

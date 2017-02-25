@@ -62,6 +62,11 @@ public class ConfigDataProvider
 	
 	public String getRedbusUrl()
 	{
-		return prop.getProperty("redbus");
+		return prop.getProperty("Redbus");
+	}
+	
+	public String getFacebookUrl()
+	{
+		return prop.getProperty("Facebook");
 	}
 }

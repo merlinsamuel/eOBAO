@@ -3,9 +3,11 @@ pages\RedbusLogin.class
 pages\Header.class
 testscripts\SoleTrader.class
 testscripts\Redbus.class
+pages\FBLoginPg.class
 library\Screenshot.class
 pages\BusinessDetailsPg.class
 pages\ImportantInfoPg.class
+testscripts\FBLoginTC.class
 temp\SampleTestNG.class
 library\TestDataProvider.class
 library\ExcelTestData.class

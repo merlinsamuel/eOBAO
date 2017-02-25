@@ -30,8 +30,10 @@ public class Redbus extends TestBase
 		RedbusLogin pg1 = PageFactory.initElements(driver, RedbusLogin.class);
 		
 		System.out.println(pg1.Txt_Source.hashCode());
+		
+		ObjFactory.getutil().EOPScreenshot(driver, driver.getTitle());
 	
-		test.log(LogStatus.INFO, "RebBus website launch - Success");
+		test.log(LogStatus.PASS, "RebBus website launch - Success");
 	}
 	
 }
