@@ -9,6 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -32,8 +33,10 @@ public class TestBase
 	{
 		if (browsername.equalsIgnoreCase("Firefox"))
 		{
-			//System.setProperty("webdriver.gecko.driver", DataProviderFactory.getconfig().getFireFoxDriverPath());
-			driver = new FirefoxDriver();
+			//System.setProperty("webdriver.gecko.driver", ObjFactory.getconfig().getFireFoxDriverPath());
+			DesiredCapabilities cap = new DesiredCapabilities();
+			cap.setCapability("marionette", true);
+			driver = new FirefoxDriver(cap);
 		}
 		else if (browsername.equalsIgnoreCase("Chrome"))
 		{

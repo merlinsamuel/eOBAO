@@ -47,6 +47,11 @@ public class ImportantInfoPg
 		Assert.assertEquals(driver.getTitle(), PAGE_TITLE);
 	}
 	
+	public void IntroOnLoad()
+	{
+		
+	}
+	
 	public void IntroPageFunctions(String testcaseid)
 	{
 		int j=0;

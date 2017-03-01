@@ -13,9 +13,9 @@ import pages.RedbusLogin;
 public class Redbus extends TestBase
 {
 		
-	@Parameters({"browser"})
+	@Parameters({"testcaseid", "browser"})
 	@Test
-	public void busTicketSearch(String browser)
+	public void busTicketSearch(String testcaseid, String browser)
 	{
 		test = report.startTest("RedBus - "+browser+" - "+ObjFactory.getutil().getCurrentTimestamp());
 		
@@ -26,11 +26,12 @@ public class Redbus extends TestBase
 		pg1.Validate_Header_LoginPageTitle();
 		test.log(LogStatus.INFO, "Login Page loaded successfully and PageTitle Validation - Success");
 		
-		pg1.RedBusLoginPageFunctions();
+		pg1.RedBusLoginPageFunctions(testcaseid);
+		test.log(LogStatus.INFO, "Performed Login Page Web Operations");
 		
 		ObjFactory.getutil().EOPScreenshot(driver, driver.getTitle());
 	
-		test.log(LogStatus.PASS, "RebBus website launch - Success");
+		test.log(LogStatus.PASS, "RebBus Login Page - Success");
 	}
 	
 }

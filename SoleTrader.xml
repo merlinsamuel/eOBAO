@@ -4,7 +4,7 @@
 
   <test name="Test_TC001">
   <parameter name="browser" value="Chrome"></parameter>
-  <parameter name="testcaseid" value="TC003"></parameter>
+  <parameter name="testcaseid" value="TC002"></parameter>
     <classes>
       <class name="testscripts.SoleTrader"/>
     </classes>

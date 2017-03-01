@@ -76,7 +76,7 @@ public class SoleTraderDP extends TestBase
 		ObjFactory.getutil().InputText(bd.Txt_1County, Txt_County); 
 		ObjFactory.getutil().InputText(bd.Txt_1PostCode, Txt_PostCode);
 		ObjFactory.getutil().InputText(bd.Txt_TradingName, Txt_TradingName);
-		ObjFactory.getutil().ClickElement(bd.Radio_TradingName);
+		//ObjFactory.getutil().ClickElement(bd.Radio_TradingName);
 		ObjFactory.getutil().DropDownSelection(bd.Dropdown_stat_cor_add, Dropdown_stat_cor_add);
 		
 		ObjFactory.getutil().EOPScreenshot(driver, driver.getTitle());

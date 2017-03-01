@@ -2,7 +2,9 @@ package library;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
@@ -61,23 +63,51 @@ public class Utility
 	//WebElement Actions - Input Text
 	public void InputText(WebElement element, String input)
 	{
+		element.isEnabled();
+		element.clear();
 		element.sendKeys(input);
 		Assert.assertEquals(element.getAttribute("value"), input);
 	}
 	
-	//WebElement Actions - Dropdown selection
-	public void DropDownSelection(WebElement element, String dropdowntext)
+	//WebElement Actions - Drop down selection
+	public void DropDownSelection(WebElement element, String dropdown_option)
 	{
+		element.isEnabled();
 		Select dropdown = new Select(element);
-		dropdown.selectByVisibleText(dropdowntext);
-		Assert.assertEquals(dropdown.getFirstSelectedOption().getText(), dropdowntext);
+		dropdown.selectByVisibleText(dropdown_option);
+		Assert.assertEquals(dropdown.getFirstSelectedOption().getText(), dropdown_option);
+	}
+		
+	//WebElement Actions - Radio Option Selection
+	public void RadioOptionSelection(List <WebElement> element, String radio_option)
+	{
+		for(WebElement value : element)
+		{
+			if(value.getAttribute("value").equalsIgnoreCase(radio_option))
+			{
+				value.isEnabled();
+				value.click();
+				Assert.assertTrue(value.isSelected());
+			}
+		}
 	}
 	
-	public void threadsleep()
+	//WebElement Actions - AutoSuggest Text boxes
+	public void AutoSuggestInputText(WebElement element, String input)
+	{
+		element.isEnabled();
+		element.click();
+		element.sendKeys(input.substring(0, 4));
+		threadsleep(2000);
+		element.sendKeys(Keys.TAB);
+		Assert.assertEquals(element.getAttribute("value"), input);
+	}
+	
+	public void threadsleep(int sleeptime)
 	{
 		try
 		{
-			Thread.sleep(500);
+			Thread.sleep(sleeptime);
 		} 
 		catch (InterruptedException e)
 		{

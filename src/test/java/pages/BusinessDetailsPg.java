@@ -1,5 +1,7 @@
 package pages;
 
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -36,7 +38,7 @@ public class BusinessDetailsPg
 	public @FindBy (how=How.ID, using="tradingname") WebElement Txt_TradingName;
 	public @FindBy (how=How.ID, using="contactCorrespondence") WebElement Txt_ContactName;
 	
-	public @FindBy (how=How.ID, using="diffTradingAddress2") WebElement Radio_TradingName;
+	public @FindBy (how=How.XPATH, using ="//input[@name='diffTradingAddress']") List <WebElement> Radio_TradingName;
 	
 	public @FindBy (how=How.ID, using="buildingNo2") WebElement Txt_2BuildingNumber;
 	public @FindBy (how=How.ID, using="street2") WebElement Txt_2Street;
@@ -45,7 +47,7 @@ public class BusinessDetailsPg
 	public @FindBy (how=How.ID, using="country2") WebElement Txt_2Country;
 	public @FindBy (how=How.ID, using="postCode2") WebElement Txt_2PostCode;
 	
-	public @FindBy (how=How.ID, using="compareAddress") WebElement Dropdown_stat_cor_add;
+	public @FindBy (how=How.XPATH, using="//*[@id='compareAddress']") WebElement Dropdown_stat_cor_add;
 	public @FindBy (how=How.ID, using="building3") WebElement Txt_3BuildingNumber;
 	public @FindBy (how=How.ID, using="street3") WebElement Txt_3Street;
 	public @FindBy (how=How.ID, using="town3") WebElement Txt_3Town;
@@ -61,6 +63,11 @@ public class BusinessDetailsPg
 		ObjFactory.getutil().WaitTillPageLoads(driver, Txt_BusiName);
 		ObjFactory.getutil().Verify_OBAO_HeaderObjects(driver);
 		Assert.assertEquals(driver.getTitle(), PAGE_TITLE);
+	}
+	
+	public void BusinessDetailsOnLoad()
+	{
+		
 	}
 	
 	public void BusinessDetailsPageFunctions(String testcaseid)
@@ -88,7 +95,7 @@ public class BusinessDetailsPg
 		ObjFactory.getutil().InputText(Txt_TradingName, ObjFactory.getexcel().getCelData(sheetname, index, j+11));
 		ObjFactory.getutil().InputText(Txt_ContactName, ObjFactory.getexcel().getCelData(sheetname, index, j+12));
 		
-		ObjFactory.getutil().ClickElement(Radio_TradingName);
+		ObjFactory.getutil().RadioOptionSelection(Radio_TradingName, ObjFactory.getexcel().getCelData(sheetname, index, j+13));
 		
 		ObjFactory.getutil().InputText(Txt_2BuildingNumber, ObjFactory.getexcel().getCelData(sheetname, index, j+14));
 		ObjFactory.getutil().InputText(Txt_2Street, ObjFactory.getexcel().getCelData(sheetname, index, j+15));

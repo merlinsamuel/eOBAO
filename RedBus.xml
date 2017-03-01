@@ -3,7 +3,8 @@
 <suite name="Suite" parallel="false">
 
   <test name="Test ch">
-    <parameter name="browser" value="Chrome"></parameter>
+    <parameter name="browser" value="Firefox"></parameter>
+     <parameter name="testcaseid" value="TC001"></parameter>
     <classes>
       <class name="testscripts.Redbus"/>
     </classes>
