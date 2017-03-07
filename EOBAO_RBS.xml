@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="false">
+
+  <test name="Test1">
+  <parameter name="browser" value="Chrome"></parameter>
+  <parameter name="testcaseid" value="TC001"></parameter>
+    <classes>
+      <class name="testscripts.EOBAO_RBS_ST"/>
+    </classes>
+  </test>
+  
+   <test name="Test2">
+  <parameter name="browser" value="Chrome"></parameter>
+  <parameter name="testcaseid" value="TC002"></parameter>
+    <classes>
+      <class name="testscripts.EOBAO_RBS_ST"/>
+    </classes>
+  </test>
+  
+   <test name="Test3">
+  <parameter name="browser" value="Chrome"></parameter>
+  <parameter name="testcaseid" value="TC003"></parameter>
+    <classes>
+      <class name="testscripts.EOBAO_RBS_ST"/>
+    </classes>
+  </test>
+  
+</suite> <!-- Suite -->

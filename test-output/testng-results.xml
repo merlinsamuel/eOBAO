@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="138986" started-at="2017-03-07T01:30:35Z" finished-at="2017-03-07T01:32:54Z">
+    <groups>
+    </groups>
+    <test name="Test1" duration-ms="52477" started-at="2017-03-07T01:30:35Z" finished-at="2017-03-07T01:31:27Z">
+      <class name="testscripts.EOBAO_RBS_ST">
+        <test-method status="PASS" signature="Setup(java.lang.String, java.lang.String)[pri:0, instance:testscripts.EOBAO_RBS_ST@6a4f787b]" name="Setup" is-config="true" duration-ms="10302" started-at="2017-03-06T17:30:35Z" finished-at="2017-03-06T17:30:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC001]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="Intro(java.lang.String, java.lang.String)[pri:0, instance:testscripts.EOBAO_RBS_ST@6a4f787b]" name="Intro" duration-ms="20186" started-at="2017-03-06T17:30:45Z" finished-at="2017-03-06T17:31:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC001]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Intro -->
+        <test-method status="PASS" signature="FailedScreenshot(org.testng.ITestResult)[pri:0, instance:testscripts.EOBAO_RBS_ST@6a4f787b]" name="FailedScreenshot" is-config="true" duration-ms="5" started-at="2017-03-06T17:31:05Z" finished-at="2017-03-06T17:31:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Intro status=SUCCESS method=EOBAO_RBS_ST.Intro(java.lang.String, java.lang.String)[pri:0, instance:testscripts.EOBAO_RBS_ST@6a4f787b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FailedScreenshot -->
+        <test-method status="PASS" signature="BD()[pri:0, instance:testscripts.EOBAO_RBS_ST@6a4f787b]" name="BD" duration-ms="18113" started-at="2017-03-06T17:31:05Z" finished-at="2017-03-06T17:31:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BD -->
+        <test-method status="PASS" signature="FailedScreenshot(org.testng.ITestResult)[pri:0, instance:testscripts.EOBAO_RBS_ST@6a4f787b]" name="FailedScreenshot" is-config="true" duration-ms="1" started-at="2017-03-06T17:31:24Z" finished-at="2017-03-06T17:31:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=BD status=SUCCESS method=EOBAO_RBS_ST.BD()[pri:0, instance:testscripts.EOBAO_RBS_ST@6a4f787b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FailedScreenshot -->
+        <test-method status="PASS" signature="Teardown()[pri:0, instance:testscripts.EOBAO_RBS_ST@6a4f787b]" name="Teardown" is-config="true" duration-ms="3815" started-at="2017-03-06T17:31:24Z" finished-at="2017-03-06T17:31:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+      </class> <!-- testscripts.EOBAO_RBS_ST -->
+    </test> <!-- Test1 -->
+    <test name="Test2" duration-ms="45792" started-at="2017-03-07T01:31:28Z" finished-at="2017-03-07T01:32:13Z">
+      <class name="testscripts.EOBAO_RBS_ST">
+        <test-method status="PASS" signature="Setup(java.lang.String, java.lang.String)[pri:0, instance:testscripts.EOBAO_RBS_ST@402a079c]" name="Setup" is-config="true" duration-ms="4864" started-at="2017-03-06T17:31:28Z" finished-at="2017-03-06T17:31:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC002]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="Intro(java.lang.String, java.lang.String)[pri:0, instance:testscripts.EOBAO_RBS_ST@402a079c]" name="Intro" duration-ms="17267" started-at="2017-03-06T17:31:32Z" finished-at="2017-03-06T17:31:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC002]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Intro -->
+        <test-method status="PASS" signature="FailedScreenshot(org.testng.ITestResult)[pri:0, instance:testscripts.EOBAO_RBS_ST@402a079c]" name="FailedScreenshot" is-config="true" duration-ms="2" started-at="2017-03-06T17:31:50Z" finished-at="2017-03-06T17:31:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Intro status=SUCCESS method=EOBAO_RBS_ST.Intro(java.lang.String, java.lang.String)[pri:0, instance:testscripts.EOBAO_RBS_ST@402a079c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FailedScreenshot -->
+        <test-method status="PASS" signature="BD()[pri:0, instance:testscripts.EOBAO_RBS_ST@402a079c]" name="BD" duration-ms="21492" started-at="2017-03-06T17:31:50Z" finished-at="2017-03-06T17:32:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BD -->
+        <test-method status="PASS" signature="FailedScreenshot(org.testng.ITestResult)[pri:0, instance:testscripts.EOBAO_RBS_ST@402a079c]" name="FailedScreenshot" is-config="true" duration-ms="1" started-at="2017-03-06T17:32:11Z" finished-at="2017-03-06T17:32:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=BD status=SUCCESS method=EOBAO_RBS_ST.BD()[pri:0, instance:testscripts.EOBAO_RBS_ST@402a079c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FailedScreenshot -->
+        <test-method status="PASS" signature="Teardown()[pri:0, instance:testscripts.EOBAO_RBS_ST@402a079c]" name="Teardown" is-config="true" duration-ms="2154" started-at="2017-03-06T17:32:11Z" finished-at="2017-03-06T17:32:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+      </class> <!-- testscripts.EOBAO_RBS_ST -->
+    </test> <!-- Test2 -->
+    <test name="Test3" duration-ms="40476" started-at="2017-03-07T01:32:13Z" finished-at="2017-03-07T01:32:54Z">
+      <class name="testscripts.EOBAO_RBS_ST">
+        <test-method status="PASS" signature="Setup(java.lang.String, java.lang.String)[pri:0, instance:testscripts.EOBAO_RBS_ST@1ce92674]" name="Setup" is-config="true" duration-ms="4339" started-at="2017-03-06T17:32:13Z" finished-at="2017-03-06T17:32:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC003]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="Intro(java.lang.String, java.lang.String)[pri:0, instance:testscripts.EOBAO_RBS_ST@1ce92674]" name="Intro" duration-ms="18005" started-at="2017-03-06T17:32:18Z" finished-at="2017-03-06T17:32:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC003]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Intro -->
+        <test-method status="PASS" signature="FailedScreenshot(org.testng.ITestResult)[pri:0, instance:testscripts.EOBAO_RBS_ST@1ce92674]" name="FailedScreenshot" is-config="true" duration-ms="0" started-at="2017-03-06T17:32:36Z" finished-at="2017-03-06T17:32:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Intro status=SUCCESS method=EOBAO_RBS_ST.Intro(java.lang.String, java.lang.String)[pri:0, instance:testscripts.EOBAO_RBS_ST@1ce92674] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FailedScreenshot -->
+        <test-method status="PASS" signature="BD()[pri:0, instance:testscripts.EOBAO_RBS_ST@1ce92674]" name="BD" duration-ms="16237" started-at="2017-03-06T17:32:36Z" finished-at="2017-03-06T17:32:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BD -->
+        <test-method status="PASS" signature="FailedScreenshot(org.testng.ITestResult)[pri:0, instance:testscripts.EOBAO_RBS_ST@1ce92674]" name="FailedScreenshot" is-config="true" duration-ms="1" started-at="2017-03-06T17:32:52Z" finished-at="2017-03-06T17:32:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=BD status=SUCCESS method=EOBAO_RBS_ST.BD()[pri:0, instance:testscripts.EOBAO_RBS_ST@1ce92674] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FailedScreenshot -->
+        <test-method status="PASS" signature="Teardown()[pri:0, instance:testscripts.EOBAO_RBS_ST@1ce92674]" name="Teardown" is-config="true" duration-ms="1874" started-at="2017-03-06T17:32:52Z" finished-at="2017-03-06T17:32:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+      </class> <!-- testscripts.EOBAO_RBS_ST -->
+    </test> <!-- Test3 -->
+  </suite> <!-- Suite -->
+</testng-results>
