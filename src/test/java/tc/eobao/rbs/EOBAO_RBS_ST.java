@@ -1,4 +1,4 @@
-package testscripts;
+package tc.eobao.rbs;
 
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Parameters;
@@ -7,11 +7,10 @@ import org.testng.annotations.Test;
 import com.relevantcodes.extentreports.LogStatus;
 
 import library.ObjFactory;
-import library.TestBase;
 import pages.eobao.rbs.RBS_BusinessDetailsPg;
 import pages.eobao.rbs.RBS_ImportantInfoPg;
 
-public class EOBAO_RBS_ST extends TestBase
+public class EOBAO_RBS_ST extends EOBAO_RBS_TestBase
 {
 
 	@Parameters({"testcaseid", "browser"})

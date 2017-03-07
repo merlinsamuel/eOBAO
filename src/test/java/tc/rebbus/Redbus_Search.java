@@ -1,4 +1,4 @@
-package testscripts;
+package tc.rebbus;
 
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Parameters;
@@ -7,10 +7,9 @@ import org.testng.annotations.Test;
 import com.relevantcodes.extentreports.LogStatus;
 
 import library.ObjFactory;
-import library.TestBase;
 import pages.redbus.Redbus_SearchPg;
 
-public class Redbus_Search extends TestBase
+public class Redbus_Search extends Redbus_TestBase
 {
 		
 	@Parameters({"testcaseid", "browser"})

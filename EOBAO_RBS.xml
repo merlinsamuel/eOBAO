@@ -6,7 +6,7 @@
   <parameter name="browser" value="Chrome"></parameter>
   <parameter name="testcaseid" value="TC001"></parameter>
     <classes>
-      <class name="testscripts.EOBAO_RBS_ST"/>
+      <class name="tc.eobao.rbs.EOBAO_RBS_ST"/>
     </classes>
   </test>
   
@@ -14,7 +14,7 @@
   <parameter name="browser" value="Chrome"></parameter>
   <parameter name="testcaseid" value="TC002"></parameter>
     <classes>
-      <class name="testscripts.EOBAO_RBS_ST"/>
+      <class name="tc.eobao.rbs.EOBAO_RBS_ST"/>
     </classes>
   </test>
   
@@ -22,7 +22,7 @@
   <parameter name="browser" value="Chrome"></parameter>
   <parameter name="testcaseid" value="TC003"></parameter>
     <classes>
-      <class name="testscripts.EOBAO_RBS_ST"/>
+      <class name="tc.eobao.rbs.EOBAO_RBS_ST"/>
     </classes>
   </test>
   

@@ -1,4 +1,4 @@
- package testscripts;
+ package tc.eobao.rbs;
 
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
@@ -10,9 +10,8 @@ import library.TestDataProvider;
 import pages.eobao.rbs.RBS_BusinessDetailsPg;
 import pages.eobao.rbs.RBS_ImportantInfoPg;
 import library.ObjFactory;
-import library.TestBase;
 
-public class SoleTraderDP extends TestBase
+public class SoleTraderDP extends EOBAO_RBS_TestBase
 {
 	
 	@Test(priority = 1, dataProviderClass = TestDataProvider.class, dataProvider = "IntroPg")

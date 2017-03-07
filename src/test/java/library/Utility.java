@@ -16,6 +16,7 @@ import org.testng.Assert;
 import com.relevantcodes.extentreports.LogStatus;
 
 import pages.eobao.rbs.RBS_HeaderPg;
+import tc.eobao.rbs.EOBAO_RBS_TestBase;
 
 public class Utility 
 {
@@ -36,7 +37,7 @@ public class Utility
 	//End of Page Screenshot
 	public void EOPScreenshot(WebDriver driver, String Pgtitlename)
 	{
-		TestBase.test.log(LogStatus.INFO, TestBase.test.addScreenCapture(ObjFactory.getscreenshot().CaptureScreenshot(driver, Pgtitlename)));
+		EOBAO_RBS_TestBase.test.log(LogStatus.INFO, EOBAO_RBS_TestBase.test.addScreenCapture(ObjFactory.getscreenshot().CaptureScreenshot(driver, Pgtitlename)));
 	}
 	
 	//Current Date and Timestamp

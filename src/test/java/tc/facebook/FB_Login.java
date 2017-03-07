@@ -1,4 +1,4 @@
-package testscripts;
+package tc.facebook;
 
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
@@ -8,10 +8,9 @@ import org.testng.annotations.Test;
 import com.relevantcodes.extentreports.LogStatus;
 
 import library.ObjFactory;
-import library.TestBase;
 import pages.facebook.FB_LoginPg;
 
-public class FB_Login extends TestBase
+public class FB_Login extends FB_TestBase
 {
 	int index;
 	int j=0;

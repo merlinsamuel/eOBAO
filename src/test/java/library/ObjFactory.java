@@ -14,9 +14,9 @@ public class ObjFactory
 		return excel;
 	}
 	
-	public static TestBase getbase()
+	public static Browserbase getbase()
 	{
-		TestBase base = new TestBase();
+		Browserbase base = new Browserbase();
 		return base;
 	}
 	
