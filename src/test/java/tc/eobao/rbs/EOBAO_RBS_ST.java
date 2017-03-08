@@ -19,8 +19,6 @@ public class EOBAO_RBS_ST extends EOBAO_RBS_TestBase
 	{
 		test = report.startTest("SoleTrader - "+browser+" - "+testcaseid+" - "+ObjFactory.getutil().getCurrentTimestamp());
 		
-		driver.get(ObjFactory.getconfig().getAppUrl());
-		
 		RBS_ImportantInfoPg Impinfo = PageFactory.initElements(driver, RBS_ImportantInfoPg.class);
 		test.log(LogStatus.INFO, "Intro PageFactory Initialization");
 		

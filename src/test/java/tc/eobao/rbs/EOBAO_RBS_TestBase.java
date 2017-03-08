@@ -30,6 +30,8 @@ public class EOBAO_RBS_TestBase
 	{
 		driver = ObjFactory.getbase().InitialSetup(browsername);
 		
+		driver.get(ObjFactory.getconfig().getAppUrl());
+		
 		index = ObjFactory.getexcel().getIndex(testcaseid, "RBS_EOBAO_Status");
 		
 		report = new ExtentReports(ObjFactory.getconfig().getReportsPath(), false);

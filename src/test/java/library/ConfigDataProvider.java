@@ -69,4 +69,22 @@ public class ConfigDataProvider
 	{
 		return prop.getProperty("Facebook");
 	}
+	
+	public String getFileUploader(String browser)
+	{
+		if(browser.equalsIgnoreCase("Chrome"))
+		{
+			return prop.getProperty("ChromeFileUploader");
+		}
+		else if(browser.equalsIgnoreCase("FireFox"))
+		{
+			return prop.getProperty("FirefoxFileUploader");
+		}
+		else if(browser.equalsIgnoreCase("IE"))
+		{
+			return prop.getProperty("IEFileUploader");
+		}
+		
+		return "File Uploader not defined for the browser";
+	}
 }

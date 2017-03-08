@@ -1,5 +1,6 @@
 package library;
 
+import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
@@ -104,6 +105,19 @@ public class Utility
 		Assert.assertEquals(element.getAttribute("value"), input);
 	}
 	
+	public void FileUpload(String browser, String filepath)
+	{
+		try 
+		{
+			Runtime.getRuntime().exec(ObjFactory.getconfig().getFileUploader(browser)+" "+filepath);
+		}
+		catch (IOException e)
+		{
+			System.out.println("Exception Occured while FileUpload");
+		}
+	}
+	
+	//Method to check if Alert is present or not
 	public boolean isAlertPresent(WebDriver driver)
 	{
 		boolean alertfound = false;
@@ -116,7 +130,6 @@ public class Utility
 		}
 		catch (Exception e)
 		{
-			//System.out.println("Alert Window not available");
 			alertfound = false;
 		}
 		

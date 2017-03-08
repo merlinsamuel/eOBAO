@@ -1,11 +1,7 @@
 package temp;
 
-import org.openqa.selenium.Keys;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.How;
 import org.testng.annotations.Test;
 
 import library.ObjFactory;
@@ -13,28 +9,18 @@ import library.ObjFactory;
 public class SampleTestNG
 {
 	WebDriver driver;
-	@FindBy (how=How.ID, using="src") WebElement autosuggest;
+	
 	
 	@Test
 	public void ChromeTest()
 	{
-		System.setProperty("webdriver.chrome.driver", ObjFactory.getconfig().getChromeDriverPath());
-		driver = new ChromeDriver();
-		driver.get(ObjFactory.getconfig().getRedbusUrl());
+		driver = ObjFactory.getbase().InitialSetup("firefox");
+		driver.get("http://resumelink.org/");
+		ObjFactory.getutil().threadsleep(2000);
+		driver.findElement(By.xpath("//input[@type='file']")).click();
+		ObjFactory.getutil().threadsleep(2000);
 		
-		//SampleTestNG pg = PageFactory.initElements(driver, SampleTestNG.class);
-		//autosuggestfn(pg.autosuggest);
-		
-		autosuggest.click();
-		autosuggest.sendKeys("Chennai");
-		ObjFactory.getutil().threadsleep(500);
-		autosuggest.sendKeys(Keys.TAB);
-		
-	}
-	
-	public void autosuggestfn(WebElement element)
-	{
-		
+		ObjFactory.getutil().FileUpload("firefox", "C:\\Users\\TOMLIN\\Desktop\\Job_Search\\Xavient\\Posting1656.txt");
 	}
 }
 		
