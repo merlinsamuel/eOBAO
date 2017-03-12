@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [HeaderSuite]">
+  <parameter name="browser" value="firefox"/>
+  <test name="HeaderTest ff(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="testscripts.TC_Header">
+        <methods>
+          <include name="Setup"/>
+          <include name="ApplicationHeader"/>
+        </methods>
+      </class> <!-- testscripts.TC_Header -->
+    </classes>
+  </test> <!-- HeaderTest ff(failed) -->
+</suite> <!-- Failed suite [HeaderSuite] -->
