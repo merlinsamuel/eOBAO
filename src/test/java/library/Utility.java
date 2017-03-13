@@ -145,7 +145,7 @@ public class Utility
 			wait.until(ExpectedConditions.alertIsPresent());
 			alertfound = true;
 			Alert alert = driver.switchTo().alert();
-			alert.getText();
+			System.out.println(alert.getText());
 			alert.accept();
 		}
 		catch (Exception e)

@@ -22,7 +22,7 @@ public class FB_HomePg
 	public @FindBy (how=How.XPATH, using="//div[@class='tickerActivityStories']") WebElement NewsFeeds;
 	public @FindBy (how=How.XPATH, using="//a[@class='_2s25']/span[text()='Merlin']") WebElement Profile;
 	public @FindBy (how=How.ID, using="userNavigationLabel") WebElement Icon_Navigation;
-	public @FindBy (how=How.ID, using="//span[text()='Log Out']") WebElement Menu_Logout;
+	//public @FindBy (how=How.ID, using="//span[text()='Log Out']") WebElement Menu_Logout;
 	
 
 	public void Validate_Header_PageTitle()
@@ -39,9 +39,7 @@ public class FB_HomePg
 	public void PageFunctions_Logout()
 	{
 		ObjFactory.getutil().ClickElement(Icon_Navigation);
-		ObjFactory.getutil().WaitTillPageLoads(driver, Menu_Logout);
-		ObjFactory.getutil().threadsleep(2000);
-		Menu_Logout.click();
+		ObjFactory.getutil().threadsleep(1000);
 	}
 	
 	public void RunStatus()

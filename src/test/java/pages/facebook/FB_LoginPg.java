@@ -61,7 +61,6 @@ public class FB_LoginPg
 	{
 		ObjFactory.getutil().InputText(Txt_Userid, ObjFactory.getexcel().getCelData(sheetname, index, col+1));
 		ObjFactory.getutil().InputText(Txt_Password, ObjFactory.getexcel().getCelData(sheetname, index, col+2));
-		Btn_Login.click();
 	}
 	
 	public void PageFunctions_Newaccount()

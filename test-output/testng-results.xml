@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="54662" started-at="2017-03-12T01:16:11Z" finished-at="2017-03-12T01:17:06Z">
+  <suite name="Suite" duration-ms="29361" started-at="2017-03-13T21:20:08Z" finished-at="2017-03-13T21:20:37Z">
     <groups>
     </groups>
-    <test name="Test1" duration-ms="54662" started-at="2017-03-12T01:16:11Z" finished-at="2017-03-12T01:17:06Z">
-      <class name="tc.eobao.rbs.Rbs_st2">
-        <test-method status="PASS" signature="browserLaunch(java.lang.String, java.lang.String)[pri:0, instance:tc.eobao.rbs.Rbs_st2@239963d8]" name="browserLaunch" is-config="true" duration-ms="9364" started-at="2017-03-11T17:16:11Z" finished-at="2017-03-11T17:16:21Z">
+    <test name="Test ch" duration-ms="29361" started-at="2017-03-13T21:20:08Z" finished-at="2017-03-13T21:20:37Z">
+      <class name="tc.rebbus.Redbus_Search">
+        <test-method status="PASS" signature="browserLaunch(java.lang.String, java.lang.String)[pri:0, instance:tc.rebbus.Redbus_Search@13deb50e]" name="browserLaunch" is-config="true" duration-ms="9466" started-at="2017-03-13T14:20:08Z" finished-at="2017-03-13T14:20:17Z">
           <params>
             <param index="0">
               <value>
@@ -23,15 +23,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserLaunch -->
-        <test-method status="PASS" signature="ApplicationLaunch()[pri:0, instance:tc.eobao.rbs.Rbs_st2@239963d8]" name="ApplicationLaunch" is-config="true" duration-ms="2564" started-at="2017-03-11T17:17:01Z" finished-at="2017-03-11T17:17:04Z">
+        <test-method status="PASS" signature="ApplicationLaunch()[pri:0, instance:tc.rebbus.Redbus_Search@13deb50e]" name="ApplicationLaunch" is-config="true" duration-ms="7312" started-at="2017-03-13T14:20:17Z" finished-at="2017-03-13T14:20:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ApplicationLaunch -->
-        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:tc.eobao.rbs.Rbs_st2@239963d8]" name="BeforeMethod" is-config="true" duration-ms="0" started-at="2017-03-11T17:17:04Z" finished-at="2017-03-11T17:17:04Z">
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:tc.rebbus.Redbus_Search@13deb50e]" name="BeforeMethod" is-config="true" duration-ms="1" started-at="2017-03-13T14:20:25Z" finished-at="2017-03-13T14:20:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method status="PASS" signature="test10(java.lang.String, java.lang.String)[pri:0, instance:tc.eobao.rbs.Rbs_st2@239963d8]" name="test10" duration-ms="21" started-at="2017-03-11T17:17:04Z" finished-at="2017-03-11T17:17:04Z">
+        <test-method status="PASS" signature="busTicketSearch(java.lang.String, java.lang.String)[pri:0, instance:tc.rebbus.Redbus_Search@13deb50e]" name="busTicketSearch" duration-ms="10164" started-at="2017-03-13T14:20:25Z" finished-at="2017-03-13T14:20:35Z">
           <params>
             <param index="0">
               <value>
@@ -46,62 +46,16 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test10 -->
-        <test-method status="PASS" signature="test11()[pri:0, instance:tc.eobao.rbs.Rbs_st2@239963d8]" name="test11" duration-ms="4" started-at="2017-03-11T17:17:04Z" finished-at="2017-03-11T17:17:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test11 -->
-        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:tc.eobao.rbs.Rbs_st2@239963d8]" name="BeforeMethod" is-config="true" duration-ms="0" started-at="2017-03-11T17:17:04Z" finished-at="2017-03-11T17:17:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method status="PASS" signature="ExecutionStatusUpdate()[pri:0, instance:tc.eobao.rbs.Rbs_st2@239963d8]" name="ExecutionStatusUpdate" is-config="true" duration-ms="363" started-at="2017-03-11T17:17:04Z" finished-at="2017-03-11T17:17:04Z">
+        </test-method> <!-- busTicketSearch -->
+        <test-method status="PASS" signature="ExecutionStatusUpdate()[pri:0, instance:tc.rebbus.Redbus_Search@13deb50e]" name="ExecutionStatusUpdate" is-config="true" duration-ms="830" started-at="2017-03-13T14:20:35Z" finished-at="2017-03-13T14:20:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ExecutionStatusUpdate -->
-        <test-method status="PASS" signature="browserClose()[pri:0, instance:tc.eobao.rbs.Rbs_st2@239963d8]" name="browserClose" is-config="true" duration-ms="1586" started-at="2017-03-11T17:17:04Z" finished-at="2017-03-11T17:17:06Z">
+        <test-method status="PASS" signature="browserClose()[pri:0, instance:tc.rebbus.Redbus_Search@13deb50e]" name="browserClose" is-config="true" duration-ms="1530" started-at="2017-03-13T14:20:36Z" finished-at="2017-03-13T14:20:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserClose -->
-      </class> <!-- tc.eobao.rbs.Rbs_st2 -->
-      <class name="tc.eobao.rbs.Rbs_st1">
-        <test-method status="PASS" signature="ApplicationLaunch()[pri:0, instance:tc.eobao.rbs.Rbs_st1@4cf777e8]" name="ApplicationLaunch" is-config="true" duration-ms="7587" started-at="2017-03-11T17:16:21Z" finished-at="2017-03-11T17:16:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ApplicationLaunch -->
-        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:tc.eobao.rbs.Rbs_st1@4cf777e8]" name="BeforeMethod" is-config="true" duration-ms="1" started-at="2017-03-11T17:16:28Z" finished-at="2017-03-11T17:16:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method status="PASS" signature="Intro(java.lang.String, java.lang.String)[pri:0, instance:tc.eobao.rbs.Rbs_st1@4cf777e8]" name="Intro" duration-ms="11301" started-at="2017-03-11T17:16:28Z" finished-at="2017-03-11T17:16:40Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[TC001]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Intro -->
-        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:tc.eobao.rbs.Rbs_st1@4cf777e8]" name="BeforeMethod" is-config="true" duration-ms="1" started-at="2017-03-11T17:16:40Z" finished-at="2017-03-11T17:16:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method status="PASS" signature="BusinessDetails()[pri:0, instance:tc.eobao.rbs.Rbs_st1@4cf777e8]" name="BusinessDetails" duration-ms="20522" started-at="2017-03-11T17:16:40Z" finished-at="2017-03-11T17:17:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BusinessDetails -->
-        <test-method status="PASS" signature="ExecutionStatusUpdate()[pri:0, instance:tc.eobao.rbs.Rbs_st1@4cf777e8]" name="ExecutionStatusUpdate" is-config="true" duration-ms="1242" started-at="2017-03-11T17:17:00Z" finished-at="2017-03-11T17:17:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ExecutionStatusUpdate -->
-      </class> <!-- tc.eobao.rbs.Rbs_st1 -->
-    </test> <!-- Test1 -->
+      </class> <!-- tc.rebbus.Redbus_Search -->
+    </test> <!-- Test ch -->
   </suite> <!-- Suite -->
 </testng-results>

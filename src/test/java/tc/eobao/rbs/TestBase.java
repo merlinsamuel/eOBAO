@@ -23,6 +23,7 @@ public class TestBase
 	public static int index;
 	public static int j=0;
 	
+	
 	//Initialize browser and test case id index
 	@Parameters({"testcaseid", "browser"})
 	@BeforeTest
@@ -39,7 +40,7 @@ public class TestBase
 	public void ApplicationLaunch()
 	{
 		driver.get(ObjFactory.getconfig().getAppUrl());
-			
+		
 		report = new ExtentReports(ObjFactory.getconfig().getReportsPath(), false);
 	}
 	
@@ -52,7 +53,7 @@ public class TestBase
 	
 	//Fail Screenshot
 	//@AfterMethod
-	public void AfterMethod(String pgObj)
+	public void AfterMethod()
 	{
 		
 	}

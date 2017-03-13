@@ -38,8 +38,15 @@ public class Redbus_SearchPg
 		
 	}
 	
-	public void RedBusLoginPageFunctions(String testcaseid)
+	public void RedBusLoginPageFunctions(int index, int col)
 	{
-		
+		ObjFactory.getutil().AutoSuggestInputText(Txt_Source, ObjFactory.getexcel().getCelData(sheetname, index, col+1));
+		ObjFactory.getutil().AutoSuggestInputText(Txt_Dest, ObjFactory.getexcel().getCelData(sheetname, index, col+2));
+	}
+	
+	public void RunStatus(int index, int col, String status, String timestamp)
+	{
+		ObjFactory.getexcel().setCelData(sheetname, index, col+3, status);
+		ObjFactory.getexcel().setCelData(sheetname, index, col+4, timestamp);
 	}
 }
