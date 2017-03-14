@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ST" parallel ="false">
+
+<test name="E2E chrome">
+  <parameter name="browser" value="Chrome"></parameter>
+     <classes>
+      <class name="testscripts.SoleTraderDP"/>
+      </classes>
+  </test>
+  
+<!-- <test name="E2E ff">
+  <parameter name="browser" value="Firefox"></parameter>
+    <classes>
+      <class name="testscripts.SoleTraderDP"/>
+      </classes>
+  </test> -->
+    
+</suite> <!-- ST -->

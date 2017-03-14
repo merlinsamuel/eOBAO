@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="29294" started-at="2017-03-14T08:39:45Z" finished-at="2017-03-14T08:40:14Z">
+    <groups>
+    </groups>
+    <test name="Test ch" duration-ms="29294" started-at="2017-03-14T08:39:45Z" finished-at="2017-03-14T08:40:14Z">
+      <class name="tc.rebbus.Redbus_Search">
+        <test-method status="PASS" signature="browserLaunch(java.lang.String)[pri:0, instance:tc.rebbus.Redbus_Search@3abbfa04]" name="browserLaunch" is-config="true" duration-ms="4762" started-at="2017-03-14T01:39:45Z" finished-at="2017-03-14T01:39:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC003]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserLaunch -->
+        <test-method status="PASS" signature="ApplicationLaunch(java.lang.String)[pri:0, instance:tc.rebbus.Redbus_Search@3abbfa04]" name="ApplicationLaunch" is-config="true" duration-ms="10442" started-at="2017-03-14T01:39:49Z" finished-at="2017-03-14T01:40:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApplicationLaunch -->
+        <test-method status="PASS" signature="Beforemethod()[pri:0, instance:tc.rebbus.Redbus_Search@3abbfa04]" name="Beforemethod" is-config="true" duration-ms="1" started-at="2017-03-14T01:40:00Z" finished-at="2017-03-14T01:40:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Beforemethod -->
+        <test-method status="PASS" signature="busTicketSearch(java.lang.String, java.lang.String)[pri:0, instance:tc.rebbus.Redbus_Search@3abbfa04]" name="busTicketSearch" duration-ms="11450" started-at="2017-03-14T01:40:00Z" finished-at="2017-03-14T01:40:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC003]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- busTicketSearch -->
+        <test-method status="PASS" signature="Aftermethod()[pri:0, instance:tc.rebbus.Redbus_Search@3abbfa04]" name="Aftermethod" is-config="true" duration-ms="7" started-at="2017-03-14T01:40:11Z" finished-at="2017-03-14T01:40:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Aftermethod -->
+        <test-method status="PASS" signature="ExecutionStatusUpdate_browserClose()[pri:0, instance:tc.rebbus.Redbus_Search@3abbfa04]" name="ExecutionStatusUpdate_browserClose" is-config="true" duration-ms="2586" started-at="2017-03-14T01:40:11Z" finished-at="2017-03-14T01:40:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExecutionStatusUpdate_browserClose -->
+        <test-method status="PASS" signature="Afterest()[pri:0, instance:tc.rebbus.Redbus_Search@3abbfa04]" name="Afterest" is-config="true" duration-ms="1" started-at="2017-03-14T01:40:14Z" finished-at="2017-03-14T01:40:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Afterest -->
+      </class> <!-- tc.rebbus.Redbus_Search -->
+    </test> <!-- Test ch -->
+  </suite> <!-- Suite -->
+</testng-results>
