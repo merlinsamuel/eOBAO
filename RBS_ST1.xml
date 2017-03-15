@@ -7,7 +7,7 @@
 </listeners>
 
   <parameter name="browser" value="Chrome"></parameter>
-  <parameter name="testcaseid" value="TC002"></parameter>
+  <parameter name="testdataid" value="TD003"></parameter>
   <test name="Test">
     <classes>
       <class name="tc.eobao.rbs.RBS_ST1"/>

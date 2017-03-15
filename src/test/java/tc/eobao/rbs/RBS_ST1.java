@@ -13,31 +13,31 @@ import pages.eobao.rbs.RBS_ImportantInfoPg;
 
 public class RBS_ST1 extends TestBase
 {
-	@Parameters({"testcaseid", "browser"})
+	@Parameters({"testdataid", "browser"})
 	@Test(priority = 1)
-	public void Intro(String testcaseid, String browser)
+	public void soletrader(String testcaseid, String browser)
 	{
-		test = report.startTest(this.getClass().getSimpleName()+" - "+browser+" - "+testcaseid+" - "+ObjFactory.getutil().getCurrentTimestamp());
+		//test = report.startTest(this.getClass().getSimpleName()+" - "+browser+" - "+testcaseid+" - "+ObjFactory.getutil().getCurrentTimestamp());
 		
 		RBS_ImportantInfoPg Impinfo = PageFactory.initElements(driver, RBS_ImportantInfoPg.class);
-		test.log(LogStatus.INFO, "Intro PageFactory Initialization");
+		Listener.test.log(LogStatus.INFO, "Intro PageFactory Initialization");
 		
 		Impinfo.Validate_Header();		
-		test.log(LogStatus.INFO, "Application Launched; Header Images and Important Info PageTitle Verification - Success");
+		Listener.test.log(LogStatus.INFO, "Application Launched; Header Images and Important Info PageTitle Verification - Success");
 		
 		Impinfo.OnLoad();
-		test.log(LogStatus.INFO, "Intro Page OnLoad controls verified");
+		Listener.test.log(LogStatus.INFO, "Intro Page OnLoad controls verified");
 		
 		Impinfo.PageFunctions(index, j);
-		test.log(LogStatus.INFO, "Static Text Validation - Success");
+		Listener.test.log(LogStatus.INFO, "Static Text Validation - Success");
 		
 		//ObjFactory.getutil().EOPScreenshot(driver, driver.getTitle());
 		
 		ObjFactory.getutil().ClickElement(Impinfo.Btn_Next);
 		
-		boolean alertpop = ObjFactory.getutil().isAlertPresent(driver);
+		boolean alertpop_Intro = ObjFactory.getutil().isAlertPresent(driver);
 		
-		if(alertpop==false)
+		if(alertpop_Intro==false)
 		{
 			Impinfo.RunStatus(index, j, "Complete", ObjFactory.getutil().getCurrentTimestamp());
 		}
@@ -46,31 +46,27 @@ public class RBS_ST1 extends TestBase
 			Impinfo.RunStatus(index, j, "Incomplete", ObjFactory.getutil().getCurrentTimestamp());
 		}
 		
-		Assert.assertFalse(alertpop);
-	}
+		Assert.assertFalse(alertpop_Intro);
 	
-	@Test(priority = 2)
-	public void BusinessDetails()
-	{
 		RBS_BusinessDetailsPg bd = PageFactory.initElements(driver, RBS_BusinessDetailsPg.class);
-		test.log(LogStatus.INFO, "Business Details PageFactory Initialization");
+		Listener.test.log(LogStatus.INFO, "Business Details PageFactory Initialization");
 		
 		bd.Validate_Header();
-		test.log(LogStatus.INFO, "Header Images and Business Details PageTitle Verification - Success");
+		Listener.test.log(LogStatus.INFO, "Header Images and Business Details PageTitle Verification - Success");
 		
 		bd.OnLoad();
-		test.log(LogStatus.INFO, "Business Details Page OnLoad controls verified");
+		Listener.test.log(LogStatus.INFO, "Business Details Page OnLoad controls verified");
 		
 		bd.PageFunctions(index, j);
-		test.log(LogStatus.INFO, "Business Details data input - Success");
+		Listener.test.log(LogStatus.INFO, "Business Details data input - Success");
 		
 		//ObjFactory.getutil().EOPScreenshot(driver, driver.getTitle());
 		
 		ObjFactory.getutil().ClickElement(bd.Btn_Next);
 		
-		boolean alertpop = ObjFactory.getutil().isAlertPresent(driver);
+		boolean alertpop_bd = ObjFactory.getutil().isAlertPresent(driver);
 		
-		if(alertpop==false)
+		if(alertpop_bd==false)
 		{
 			bd.RunStatus(index, j, "Complete", ObjFactory.getutil().getCurrentTimestamp());
 		}
@@ -79,6 +75,6 @@ public class RBS_ST1 extends TestBase
 			bd.RunStatus(index, j, "Incomplete", ObjFactory.getutil().getCurrentTimestamp());
 		}
 		
-		Assert.assertFalse(alertpop);
+		Assert.assertFalse(alertpop_bd);
 	}
 }

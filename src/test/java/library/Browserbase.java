@@ -14,11 +14,12 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 
 public class Browserbase
 {
-	public WebDriver driver;
+	WebDriver driver;
 	
 	//Browser Initialize
 	public WebDriver InitialSetup(String browsername)
 	{
+				
 		if (browsername.equalsIgnoreCase("Firefox"))
 		{
 			System.setProperty("webdriver.gecko.driver", ObjFactory.getconfig().getFireFoxDriverPath());

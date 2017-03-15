@@ -7,7 +7,7 @@
 </listeners>
 
  <parameter name="browser" value="Chrome"></parameter>
- <parameter name="testcaseid" value="TC003"></parameter>
+ <parameter name="testdataid" value="TD002"></parameter>
  
   <test name="Test ch">
     <classes>

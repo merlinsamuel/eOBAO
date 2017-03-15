@@ -4,8 +4,6 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.relevantcodes.extentreports.LogStatus;
-
 import library.TestDataProvider;
 import pages.eobao.rbs.RBS_BusinessDetailsPg;
 import pages.eobao.rbs.RBS_ImportantInfoPg;
@@ -18,19 +16,19 @@ public class SoleTraderDP extends TestBase
 	@Test(priority = 1, dataProviderClass = TestDataProvider.class, dataProvider = "IntroPg")
 	public void IntroPg(String StText_Line1, String StText_Line2, String StText_Line3, String StText_Line4, String StText_Line5, String StText_Line6, String StText_Line7, String StText_Line8, String StText_Line9, String StText_Line10, String StText_Line11)
 	{
-		test = report.startTest("SoleTrader DP -"+ObjFactory.getutil().getCurrentTimestamp());
+		//test = report.startTest("SoleTrader DP -"+ObjFactory.getutil().getCurrentTimestamp());
 		
 		driver.get(ObjFactory.getconfig().getAppUrl());
 		
 		RBS_ImportantInfoPg Impinfo = PageFactory.initElements(driver, RBS_ImportantInfoPg.class);
-		test.log(LogStatus.INFO, "Intro PageFactory Initialization");
+		//test.log(LogStatus.INFO, "Intro PageFactory Initialization");
 		
 		ObjFactory.getutil().WaitTillPageLoads(driver, Impinfo.StText_Line1);
 		
 		ObjFactory.getutil().Verify_OBAO_HeaderObjects(driver);
 		
 		Assert.assertEquals(driver.getTitle(), Impinfo.PAGE_TITLE);
-		test.log(LogStatus.INFO, "Application Launched; Header Images and Important Info PageTitle Verification - Success");
+		//test.log(LogStatus.INFO, "Application Launched; Header Images and Important Info PageTitle Verification - Success");
 		
 		Assert.assertEquals(Impinfo.StText_Line1.getText(), StText_Line1);
 		Assert.assertEquals(Impinfo.StText_Line2.getText(), StText_Line2);
@@ -44,27 +42,27 @@ public class SoleTraderDP extends TestBase
 		Assert.assertEquals(Impinfo.StText_Line10.getText(), StText_Line10);
 		Assert.assertEquals(Impinfo.StText_Line11.getText(), StText_Line11);
 		
-		test.log(LogStatus.INFO, "Static Text Validation - Success");
+		//test.log(LogStatus.INFO, "Static Text Validation - Success");
 		
 		ObjFactory.getutil().EOPScreenshot(driver, driver.getTitle());
 		
 		ObjFactory.getutil().ClickElement(Impinfo.Btn_Next);
 		
-		test.log(LogStatus.PASS, "IntroPg - Success");
+		//test.log(LogStatus.PASS, "IntroPg - Success");
 	}
 	
 	@Test(priority = 2, dataProviderClass = TestDataProvider.class, dataProvider = "BusinessDetailsPg")
 	public void BD(String Txt_BusiName, String Txt_BusiTelephoneNumber, String Txt_BusiEmail, String Txt_MobileNumber, String Txt_BuildingNumber, String Txt_Street, String Txt_County, String Txt_Town, String Txt_PostCode, String Txt_TradingName, String Dropdown_stat_cor_add)
 	{
 		RBS_BusinessDetailsPg bd = PageFactory.initElements(driver, RBS_BusinessDetailsPg.class);
-		test.log(LogStatus.INFO, "Business Details PageFactory Initialization");
+		//test.log(LogStatus.INFO, "Business Details PageFactory Initialization");
 		
 		ObjFactory.getutil().WaitTillPageLoads(driver, bd.Txt_BusiName);
 		
 		ObjFactory.getutil().Verify_OBAO_HeaderObjects(driver);
 		
 		Assert.assertEquals(driver.getTitle(), bd.PAGE_TITLE);
-		test.log(LogStatus.INFO, "Header Images and Business Details PageTitle Verification - Success");
+		//test.log(LogStatus.INFO, "Header Images and Business Details PageTitle Verification - Success");
 		
 		ObjFactory.getutil().InputText(bd.Txt_BusiName, Txt_BusiName);
 		ObjFactory.getutil().InputText(bd.Txt_BusiTelephoneNumber, Txt_BusiTelephoneNumber);
@@ -81,6 +79,6 @@ public class SoleTraderDP extends TestBase
 		
 		ObjFactory.getutil().EOPScreenshot(driver, driver.getTitle());
 		
-		test.log(LogStatus.PASS, "Business Details data input - Success");
+		//test.log(LogStatus.PASS, "Business Details data input - Success");
 	}
 }

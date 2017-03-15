@@ -14,44 +14,44 @@ import pages.facebook.FB_LoginPg;
 public class FB_Login extends TestBase
 {
 		
-	@Parameters({"testcaseid", "browser"})
+	@Parameters({"testdataid", "browser"})
 	@Test (priority = 1)
-	public void Login(String testcaseid, String browser)
+	public void Login(String testdataid, String browser)
 	{
-		test = report.startTest(this.getClass().getSimpleName()+" - "+browser+" - "+testcaseid+" - "+ObjFactory.getutil().getCurrentTimestamp());
-		
-		test.log(LogStatus.INFO, "Browser Launch");
+		Listener.test.log(LogStatus.INFO, "Browser Launch");
 		
 		FB_LoginPg fblogin = PageFactory.initElements(driver, FB_LoginPg.class);
-		test.log(LogStatus.INFO, "Login Page Initialisation");
+		Listener.test.log(LogStatus.INFO, "Login Page Initialisation");
 		
 		FB_HomePg fbhome = PageFactory.initElements(driver, FB_HomePg.class);
-		test.log(LogStatus.INFO, "Home Page Initialisation");
+		Listener.test.log(LogStatus.INFO, "Home Page Initialisation");
 		
 		//FB_LoginErrorPg fberror = PageFactory.initElements(driver, FB_LoginErrorPg.class);
 		//test.log(LogStatus.INFO, "Error Page Initialisation");
 		
 		fblogin.Validate_Header_PageTitle();
-		test.log(LogStatus.INFO, "Page Load and Header validation");
+		Listener.test.log(LogStatus.INFO, "Page Load and Header validation");
 		
 		fblogin.OnLoad();
-		test.log(LogStatus.INFO, "OnLoad Page Validation");
+		Listener.test.log(LogStatus.INFO, "OnLoad Page Validation");
 		
 		fblogin.PageFunctions_Login(index, j);
-		test.log(LogStatus.INFO, "Login Functions");
+		Listener.test.log(LogStatus.INFO, "Login Functions");
 		
 		fblogin.Btn_Login.click();
 		
-		if(fbhome.Profile.isDisplayed())
+		boolean status = fbhome.Profile.isDisplayed();
+		
+		if(status==true)
 		{
 			fblogin.RunStatus(index, j, "Complete", ObjFactory.getutil().getCurrentTimestamp());
 		}
-		else
+		else if(status==false)
 		{
 			fblogin.RunStatus(index, j, "Incomplete", ObjFactory.getutil().getCurrentTimestamp());
 		}
 		
-		Assert.assertTrue(fbhome.Profile.isDisplayed());
+		Assert.assertTrue(status);
 		
 		fbhome.Validate_Header_PageTitle();
 		fbhome.OnLoad();

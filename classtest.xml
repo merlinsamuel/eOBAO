@@ -6,8 +6,9 @@
 <listener class-name="temp.Listener"/>
 </listeners>
 
-<parameter name="testcaseid" value="TC002"></parameter>
-  <test name="Test">
+<parameter name="testdataid" value="TD001"></parameter>
+<parameter name="browser" value="Chrome"></parameter>
+  <test name="Test1">
     <classes>
       <class name="temp.Class1"/>
       <class name="temp.Class2"/>

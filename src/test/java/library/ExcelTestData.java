@@ -117,12 +117,12 @@ public class ExcelTestData
 	}
 	
 	
-	public void setCelData(String sheetname, int row, int col, int status)
+	public void setCelData(String sheetname, int row, int col, int number)
 	{
 		try
 		{
 			Cell cellvalue = wb.getSheet(sheetname).getRow(row).createCell(col);
-			cellvalue.setCellValue(status);
+			cellvalue.setCellValue(number);
 			FileOutputStream fout = new FileOutputStream(src);
 			wb.write(fout);
 		} 

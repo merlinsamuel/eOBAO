@@ -5,36 +5,19 @@ import library.ObjFactory;
 public class testjava
 {
 
-
 	public static void main(String[] args)
 	{
+		ObjFactory.getexcel().setCelData("RBS_EOBAO_Status", 1, 0, 1);
 		
-		String sheetname ="Sample";	
+		int i=1;
+		int sno=0;
 		
-		int match = getEmptyRowIndex(sheetname);
+		String data = ObjFactory.getexcel().getCelData("RBS_EOBAO_Status", i-1, 0);
+		sno = Integer.parseInt(data.trim());
+		System.out.println(sno);
 		
-		System.out.println("Value of empty row = "+match);
-
+		ObjFactory.getexcel().setCelData("RBS_EOBAO_Status", i, 0, sno+1);
+		System.out.println("Excel updated");
 	}
 	
-	public static int getEmptyRowIndex(String sheetname)
-	{
-		int index=0;
-		
-		int row = ObjFactory.getexcel().getRowCount(sheetname);
-		System.out.println("Row count: "+row);
-		Object [] data = new Object[row];
-		
-		for(int i=0; i<row; i++)
-		{
-			data[i]=ObjFactory.getexcel().getCelData(sheetname, i, 1);
-			if(data[i].equals(""))
-			{
-				index = i;
-				break;
-			}
-		}
-		return index;
-	}
-
 }

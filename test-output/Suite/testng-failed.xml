@@ -1,38 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]">
-  <parameter name="testcaseid" value="TC002"/>
+  <parameter name="testdataid" value="TD001"/>
   <parameter name="browser" value="Chrome"/>
   <listeners>
-    <listener class-name="tc.eobao.rbs.Listener"/>
+    <listener class-name="temp.Listener"/>
   </listeners>
-  <test name="Test2(failed)">
-    <parameter name="testcaseid" value="TC003"/>
-    <parameter name="browser" value="Firefox"/>
+  <test name="Test1(failed)">
     <classes>
-      <class name="tc.eobao.rbs.RBS_ST1">
+      <class name="temp.Class3">
         <methods>
-          <include name="Aftermethod"/>
-          <include name="Aftermethod"/>
-          <include name="Aftermethod"/>
-          <include name="BusinessDetails"/>
-          <include name="ApplicationLaunch"/>
-          <include name="ApplicationLaunch"/>
-          <include name="ApplicationLaunch"/>
-          <include name="ExecutionStatusUpdate_browserClose"/>
-          <include name="Aftertest"/>
-          <include name="ExecutionStatusUpdate_browserClose"/>
-          <include name="Aftertest"/>
-          <include name="ExecutionStatusUpdate_browserClose"/>
-          <include name="Aftertest"/>
-          <include name="Beforemethod"/>
-          <include name="Beforemethod"/>
-          <include name="Beforemethod"/>
-          <include name="browserLaunch"/>
-          <include name="browserLaunch"/>
-          <include name="browserLaunch"/>
+          <include name="class3test1"/>
         </methods>
-      </class> <!-- tc.eobao.rbs.RBS_ST1 -->
+      </class> <!-- temp.Class3 -->
+      <class name="temp.Class1">
+        <methods>
+          <include name="class1test1"/>
+        </methods>
+      </class> <!-- temp.Class1 -->
     </classes>
-  </test> <!-- Test2(failed) -->
+  </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Suite] -->

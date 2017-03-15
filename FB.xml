@@ -8,7 +8,7 @@
 
 <test name="Test1">
   <parameter name="browser" value="chrome"></parameter>
-  <parameter name="testcaseid" value="TC002"></parameter>
+  <parameter name="testdataid" value="TD002"></parameter>
     <classes>
       <class name="tc.facebook.FB_Login"/>
     </classes>

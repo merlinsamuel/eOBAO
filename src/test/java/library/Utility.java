@@ -1,6 +1,7 @@
 package library;
 
 import java.io.IOException;
+import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
@@ -18,7 +19,7 @@ import org.testng.Assert;
 import com.relevantcodes.extentreports.LogStatus;
 
 import pages.eobao.rbs.RBS_HeaderPg;
-import tc.eobao.rbs.TestBase;
+import tc.eobao.rbs.Listener;
 
 public class Utility 
 {
@@ -39,13 +40,15 @@ public class Utility
 	//End of Page Screenshot
 	public void EOPScreenshot(WebDriver driver, String Pgtitlename)
 	{
-		TestBase.test.log(LogStatus.INFO, TestBase.test.addScreenCapture(ObjFactory.getscreenshot().CaptureScreenshot(driver, Pgtitlename)));
+		Listener.test.log(LogStatus.INFO, Listener.test.addScreenCapture(ObjFactory.getscreenshot().CaptureScreenshot(driver, Pgtitlename)));
 	}
 	
 	//Current Date and Timestamp
 	public String getCurrentTimestamp()
 	{
-		String timestamp = new SimpleDateFormat("yyy_MM_dd-HH.mm.ss").format(new Date());
+		DateFormat df = new SimpleDateFormat("yyy-MM-dd HH:mm:ss");
+		Date dateobj = new Date();
+		String timestamp = df.format(dateobj);
 		return timestamp;
 	}
 	
