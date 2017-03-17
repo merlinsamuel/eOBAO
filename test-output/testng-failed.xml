@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <parameter name="testdataid" value="TD002"/>
+  <parameter name="browser" value="Firefox"/>
+  <listeners>
+    <listener class-name="library.Listener"/>
+  </listeners>
+  <test name="Test2(failed)">
+    <parameter name="testdataid" value="TD003"/>
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="tc.eobao.rbs.RBS_ST1">
+        <methods>
+          <include name="Aftermethod"/>
+          <include name="Aftermethod"/>
+          <include name="Aftermethod"/>
+          <include name="ApplicationLaunch"/>
+          <include name="ApplicationLaunch"/>
+          <include name="ApplicationLaunch"/>
+          <include name="Aftertest"/>
+          <include name="Aftertest"/>
+          <include name="Aftertest"/>
+          <include name="Beforemethod"/>
+          <include name="Beforemethod"/>
+          <include name="Beforemethod"/>
+          <include name="soletrader" invocation-numbers="0"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="browserClose"/>
+          <include name="browserClose"/>
+          <include name="browserClose"/>
+        </methods>
+      </class> <!-- tc.eobao.rbs.RBS_ST1 -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Suite] -->

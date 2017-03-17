@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+<listeners>
+<listener class-name="library.Listener"/>
+</listeners>
+
+<parameter name="testdataid" value="TD001"></parameter>
+<parameter name="browser" value="Chrome"></parameter>
+  <test name="Test1">
+    <classes>
+      <class name="temp.Class1"/>
+      <class name="temp.Class2"/>
+      <class name="temp.Class3"/>
+      <class name="temp.Class4"/>
+    </classes>
+  </test>
+  
+  
+</suite> <!-- Suite -->
